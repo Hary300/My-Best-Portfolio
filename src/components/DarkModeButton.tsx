@@ -17,7 +17,7 @@ const DarkModeButton = () => {
   return (
     <Button
       onClick={handleClickDarkMode}
-      className='h-10 flex items-center justify-center'
+      className='h-10 flex items-center justify-center bg-[#191c1f] dark:bg-[#e9e9e3]'
     >
       {isDark ? <Sun className='size-5' /> : <Moon className='size-5' />}
     </Button>
