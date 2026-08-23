@@ -19,7 +19,7 @@ const MobileMenu = () => {
     setSearchParams(params);
   };
   return (
-    <div className='fixed bottom-0 sm:hidden flex justify-between dark:bg-[#191C1F] bg-[#CCCCCC] items-center w-full dark:border-t-[1.5px]'>
+    <div className='fixed bottom-0 sm:hidden flex justify-between dark:bg-portfolio-dark-secondary bg-portfolio-light-secondary items-center w-full dark:border-t-[1.5px]'>
       {mobileMenus.map((menu) => {
         const Icon = menu.icon;
         return (
@@ -27,8 +27,9 @@ const MobileMenu = () => {
             variant='ghost'
             key={menu.id}
             className={cn(
-              'flex-1 flex flex-col gap-1 items-center h-20 rounded-none',
-              menu.slug === activeTab && 'bg-muted dark:bg-muted/50'
+              'flex-1 flex flex-col gap-1 items-center h-20 rounded-none hover:bg-portfolio-green-soft/70 dark:hover:bg-portfolio-green/40',
+              menu.slug === activeTab &&
+                'bg-portfolio-green-soft/70 dark:bg-portfolio-green/40'
             )}
             onClick={() => handleClickMenu(menu.slug)}
           >
