@@ -20,7 +20,7 @@ function App() {
   }, [isDark]);
 
   return (
-    <div className='flex gap-10'>
+    <div className='flex'>
       <SidebarMenu />
       <MobileMenu />
       {activeTab === 'home' && <Home />}

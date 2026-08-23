@@ -1,7 +1,7 @@
 import Container from '@/components/layouts/Container';
 
 const Projects = () => {
-  return <Container>Projects</Container>;
+  return <Container title='Projects'>Projects</Container>;
 };
 
 export default Projects;

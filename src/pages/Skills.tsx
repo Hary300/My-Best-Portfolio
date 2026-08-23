@@ -1,7 +1,7 @@
 import Container from '@/components/layouts/Container';
 
 const Skills = () => {
-  return <Container>Skills</Container>;
+  return <Container title='Skills'>Skills</Container>;
 };
 
 export default Skills;

@@ -21,7 +21,7 @@ const SidebarMenu = () => {
     setSearchParams(params);
   };
   return (
-    <div className='hidden sm:flex flex-col justify-between min-w-70 bg-portfolio-light-secondary dark:bg-portfolio-dark-secondary border-r-2 min-h-screen p-4'>
+    <div className='hidden sm:flex flex-col justify-between lg:min-w-70 bg-portfolio-light-secondary dark:bg-portfolio-dark-secondary border-r-2 h-screen p-4'>
       <div className='flex flex-col gap-4'>
         <Header />
         <div className='flex gap-3 bg-portfolio-green-soft/70 dark:bg-portfolio-green/40 px-3 py-2 rounded-md items-center border'>

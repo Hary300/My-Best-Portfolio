@@ -26,6 +26,8 @@
   --color-portfolio-gold: #d0bf91;
 
   --color-portfolio-border: #cccccc;
+
+  --shadow-soft: 0 0 50px rgba(26, 142, 107, 0.1);
 }
 
 @theme inline {
