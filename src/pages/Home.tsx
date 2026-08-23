@@ -45,7 +45,7 @@ const Home = () => {
           <img src={isDark ? darkHeroImage : lightHeroImage} alt='hero image' />
         </div>
       </div>
-      <div className='mt-10 flex flex-col gap-4 pb-20'>
+      <div className='mt-10 flex flex-col gap-4 sm:gap-10 pb-20'>
         <h3 className='font-semibold text-2xl'>Featured Projects</h3>
         <ProjectGrid projects={featuredProjects} />
       </div>

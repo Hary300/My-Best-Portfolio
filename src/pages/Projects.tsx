@@ -5,7 +5,7 @@ import { projects } from '@/data/projects';
 const Projects = () => {
   const allProjects = projects.allProjects;
   return (
-    <Container title='Projects' className=''>
+    <Container title='Projects' className='pb-25'>
       <ProjectGrid projects={allProjects} />
     </Container>
   );

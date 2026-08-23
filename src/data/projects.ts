@@ -18,7 +18,7 @@ interface TechStack {
   name: string;
   bgColor: string;
   textColor: string;
-  icon?: IconType;
+  icon: IconType;
 }
 
 export interface Project {
@@ -259,8 +259,8 @@ export const projects: Projects = {
         },
         {
           name: 'Express',
-          bgColor: 'bg-stone-200',
-          textColor: 'text-stone-800',
+          bgColor: 'bg-zinc-200 dark:bg-zinc-800/80',
+          textColor: 'text-zinc-800 dark:text-zinc-300',
           icon: SiExpress,
         },
       ],

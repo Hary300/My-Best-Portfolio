@@ -8,7 +8,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div className='rounded-2xl flex flex-col gap-6 p-4 border-2'>
+    <div className='rounded-2xl flex flex-col gap-6 p-4 border-2 shadow-subtle dark:shadow-green'>
       <div className='rounded-2xl overflow-hidden h-50'>
         <img
           src={project.image}
@@ -18,7 +18,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       </div>
       <p className='font-semibold text-xl'>{project.title}</p>
       <p className='text-zinc-500'>{project.description}</p>
-      <div className='xl:flex gap-2 grid grid-cols-2 lg:'>
+      <div className='flex gap-2 flex-wrap'>
         {project.techStack.map((item) => {
           const Icon = item.icon;
           return (
