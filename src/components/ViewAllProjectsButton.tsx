@@ -10,7 +10,7 @@ const ViewAllProjectsButton = () => {
   };
   return (
     <Button
-      className='bg-portfolio-green-secondary dark:bg-portfolio-green text-portfolio-white h-10'
+      className='bg-portfolio-green text-portfolio-white h-10'
       onClick={handleClick}
     >
       View All Projects

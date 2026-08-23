@@ -5,8 +5,11 @@ import ViewAllProjectsButton from '@/components/ViewAllProjectsButton';
 import darkHeroImage from '@/assets/images/dark-group.png';
 import lightHeroImage from '@/assets/images/light-group.png';
 import { themeStore } from '@/store/themeStore';
+import { projects } from '@/data/projects';
+import ProjectGrid from '@/components/ProjectGrid';
 
 const Home = () => {
+  const featuredProjects = projects.featuredProjects;
   const isDark = themeStore((state) => state.isDark);
   return (
     <Container title='Home'>
@@ -41,6 +44,10 @@ const Home = () => {
         <div className='flex-1 md:min-w-70 lg:max-w-150 '>
           <img src={isDark ? darkHeroImage : lightHeroImage} alt='hero image' />
         </div>
+      </div>
+      <div className='mt-10 flex flex-col gap-4 pb-20'>
+        <h3 className='font-semibold text-2xl'>Featured Projects</h3>
+        <ProjectGrid projects={featuredProjects} />
       </div>
     </Container>
   );

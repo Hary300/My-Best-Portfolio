@@ -1,7 +1,14 @@
 import Container from '@/components/layouts/Container';
+import ProjectGrid from '@/components/ProjectGrid';
+import { projects } from '@/data/projects';
 
 const Projects = () => {
-  return <Container title='Projects'>Projects</Container>;
+  const allProjects = projects.allProjects;
+  return (
+    <Container title='Projects' className=''>
+      <ProjectGrid projects={allProjects} />
+    </Container>
+  );
 };
 
 export default Projects;

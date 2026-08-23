@@ -10,7 +10,12 @@ interface ContainerProps {
 
 const Container = ({ children, className, title }: ContainerProps) => {
   return (
-    <div className={cn('p-4 sm:px-10  w-full flex flex-col gap-4', className)}>
+    <div
+      className={cn(
+        'p-4 sm:px-10  w-full flex flex-col gap-4 overflow-y-auto h-screen',
+        className
+      )}
+    >
       <div className='block sm:hidden'>
         <Header />
       </div>
