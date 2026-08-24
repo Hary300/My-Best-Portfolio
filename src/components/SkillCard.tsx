@@ -7,8 +7,15 @@ interface SkillCardProps {
 
 const SkillCard = ({ skill }: SkillCardProps) => {
   const Icon = skill.icon;
+
+  const handleCardClick = (url: string) => {
+    window.open(url, '_blank');
+  };
   return (
-    <div className='flex flex-col gap-4 items-center rounded-md border-portfolio-green/70 border p-4 cursor-pointer transition-all duration-200 hover:-translate-y-1 active:translate-0 group hover:shadow-subtle active:shadow-none bg-portfolio-green/10 dark:active:shadow-green'>
+    <div
+      className='flex flex-col gap-4 items-center rounded-md border-portfolio-green/70 border p-4 cursor-pointer transition-all duration-200 hover:-translate-y-1 active:translate-0 group hover:shadow-subtle active:shadow-none bg-portfolio-green/10 dark:active:shadow-green'
+      onClick={() => handleCardClick(skill.url)}
+    >
       <div className='flex flex-col gap-1 items-center'>
         <Icon className={cn('size-8 group-hover:animate-spin', skill.color)} />
         <p className='text-md'>{skill.name}</p>
