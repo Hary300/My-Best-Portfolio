@@ -18,7 +18,7 @@ const Home = () => {
           <p className='text-xl sm:text-3xl font-bold xl:text-5xl'>
             Hi, I'm Hary
           </p>
-          <p className='text-xl sm:text-3xl xl:text-5xl font-bold text-portfolio-green-secondary dark:text-portfolio-green'>
+          <p className='text-xl sm:text-3xl xl:text-5xl font-bold text-portfolio-green'>
             Full Stack Developer
           </p>
           <p className='text-sm xl:text-lg'>

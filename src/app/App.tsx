@@ -6,7 +6,7 @@ import { useSearchParams } from 'react-router-dom';
 import Home from '@/pages/Home';
 import Projects from '@/pages/Projects';
 import Skills from '@/pages/Skills';
-import About from '@/pages/About';
+import About from '@/pages/about/About';
 import Contact from '@/pages/Contact';
 
 function App() {

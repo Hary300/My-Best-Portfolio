@@ -7,7 +7,7 @@ const Header = () => {
         <h1 className='font-bold text-2xl'>
           HARY<span className='text-portfolio-green'>300</span>
         </h1>
-        <p className='text-zinc-500'>Full Stack developer</p>
+        <p>Full Stack developer</p>
       </div>
       <DarkModeButton />
     </div>

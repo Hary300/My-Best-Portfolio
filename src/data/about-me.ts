@@ -7,7 +7,7 @@ import { RiUserHeartLine } from 'react-icons/ri';
 import { HiOutlineUsers } from 'react-icons/hi2';
 import { RiTargetFill } from 'react-icons/ri';
 import { BsBarChart } from 'react-icons/bs';
-import { CiMail } from 'react-icons/ci';
+import { MdMailOutline } from 'react-icons/md';
 import { BiSolidQuoteAltLeft } from 'react-icons/bi';
 import type { IconType } from 'react-icons/lib';
 
@@ -18,7 +18,8 @@ export interface AboutQuote {
 }
 
 export interface AboutHeader {
-  title: string;
+  firstTitle: string;
+  secondTitle: string;
   paragraphs: string[];
   quote: AboutQuote;
 }
@@ -32,7 +33,6 @@ export interface WhatIDoItem {
 export interface WhatIDoSection {
   icon: IconType;
   title: string;
-  description: string;
   items: WhatIDoItem[];
 }
 
@@ -40,7 +40,6 @@ export interface WhatIValueItem {
   icon: IconType;
   title: string;
   description: string;
-  highlightText?: string;
 }
 
 export interface WhatIValueSection {
@@ -57,16 +56,17 @@ export interface AboutCTA {
   buttonLink: string;
 }
 
-export interface AboutData {
+export interface AboutMe {
   header: AboutHeader;
   whatIDo: WhatIDoSection;
   whatIValue: WhatIValueSection;
   cta: AboutCTA;
 }
 
-export const aboutData: AboutData = {
+export const aboutMe: AboutMe = {
   header: {
-    title: 'More about me.',
+    firstTitle: 'More about',
+    secondTitle: 'me.',
     paragraphs: [
       "I'm Hary, a passionate Full Stack Developer who enjoys building modern, responsive, and user-friendly web applications.",
       'I love turning ideas into real products that solve problems and create meaningful experiences for users.',
@@ -75,15 +75,13 @@ export const aboutData: AboutData = {
     quote: {
       icon: BiSolidQuoteAltLeft,
       text: "Code is not just what I do, it's how I bring ideas to life.",
-      highlight: 'bring ideas to life.',
+      highlight: 'bring ideas to life',
     },
   },
 
   whatIDo: {
     icon: FaRegLightbulb,
     title: 'What I Do',
-    description:
-      'I build web applications from front to back with clean code, attention to detail, and a focus on great user experience.',
     items: [
       {
         icon: FiMonitor,
@@ -127,13 +125,12 @@ export const aboutData: AboutData = {
         icon: BsBarChart,
         title: 'Growth Mindset',
         description: 'Always learning and embracing new challenges.',
-        highlightText: 'challenges.',
       },
     ],
   },
 
   cta: {
-    icon: CiMail,
+    icon: MdMailOutline,
     title: "Let's work together!",
     subtitle: "I'm open to new opportunities and interesting projects.",
     buttonText: 'Get In Touch',

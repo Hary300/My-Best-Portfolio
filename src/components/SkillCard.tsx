@@ -18,7 +18,7 @@ const SkillCard = ({ skill }: SkillCardProps) => {
 
         <div className='w-full dark:bg-portfolio-card-secondary bg-portfolio-gray-muted rounded-full'>
           <div
-            className='h-0.5 bg-portfolio-green rounded-md  dark:shadow-[0_0_5px_#1a8e6b,0_0_10px_#1a8e6b,0_0_20px_rgba(26,142,107,0.8),0_0_40px_rgba(26,142,107,0.5)]'
+            className='h-0.5 bg-portfolio-green rounded-md  dark:shadow-glow-green'
             style={{ width: `${skill.percentage}%` }}
           />
         </div>
