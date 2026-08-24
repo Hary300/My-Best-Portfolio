@@ -1,6 +1,11 @@
 import { FaNodeJs } from 'react-icons/fa';
 import { FaReact } from 'react-icons/fa';
-import { SiMongoose, SiReacthookform, SiTypescript } from 'react-icons/si';
+import {
+  SiMongoose,
+  SiReacthookform,
+  SiShadcnui,
+  SiTypescript,
+} from 'react-icons/si';
 import { TbApi } from 'react-icons/tb';
 import { RiNextjsFill } from 'react-icons/ri';
 import { SiMongodb } from 'react-icons/si';
@@ -12,6 +17,7 @@ import { SiZod } from 'react-icons/si';
 import { BsJavascript } from 'react-icons/bs';
 import { FaCss3Alt } from 'react-icons/fa';
 import { FaHtml5 } from 'react-icons/fa6';
+import type { Projects, Total } from '@/types/projects';
 import LibraryApp from '@/assets/images/projects-ss/LibraryApp.webp';
 import RestaurantApp from '@/assets/images/projects-ss/RestaurantApp.webp';
 import MovieDB from '@/assets/images/projects-ss/MovieDB.webp';
@@ -21,7 +27,11 @@ import CompanyProfile from '@/assets/images/projects-ss/CompanyProfile.webp';
 import ItachiLandingPage from '@/assets/images/projects-ss/ItachiLandingPage.webp';
 import VoiceCounter from '@/assets/images/projects-ss/VoiceCounter.webp';
 import NeumorphicCalculator from '@/assets/images/projects-ss/NeumorphicCalculator.webp';
-import type { Projects, Total } from '@/types/projects';
+import GreenPortfolio from '@/assets/images/projects-ss/GreenPortfolio.webp';
+import ElementDb from '@/assets/images/projects-ss/ElementDb.webp';
+import MyPortfolio from '@/assets/images/projects-ss/MyPortfolio.webp';
+import SimpleTodoList from '@/assets/images/projects-ss/SimpleTodoList.webp';
+import SimplePortfolio from '@/assets/images/projects-ss/SimplePortfolio.webp';
 
 export const projects: Projects = {
   /** ==============
@@ -320,6 +330,47 @@ export const projects: Projects = {
       },
     },
     {
+      id: 'proj-18',
+      title: 'Simple Todo List App',
+      category: {
+        name: 'Web App',
+        slug: 'web-app',
+      },
+      image: SimpleTodoList,
+      description:
+        'A clean and lightweight task manager application for creating, tracking, and managing daily tasks using REST API integrations.',
+      techStack: [
+        {
+          name: 'HTML5',
+          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
+          textColor: 'text-orange-800 dark:text-orange-300',
+          icon: FaHtml5,
+        },
+        {
+          name: 'CSS3',
+          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
+          textColor: 'text-blue-800 dark:text-blue-300',
+          icon: FaCss3Alt,
+        },
+        {
+          name: 'JavaScript',
+          bgColor: 'bg-amber-100 dark:bg-amber-950/60',
+          textColor: 'text-amber-800 dark:text-amber-300',
+          icon: BsJavascript,
+        },
+        {
+          name: 'REST API',
+          bgColor: 'bg-emerald-100 dark:bg-emerald-950/60',
+          textColor: 'text-emerald-800 dark:text-emerald-300',
+          icon: TbApi,
+        },
+      ],
+      links: {
+        github: 'https://github.com/Hary300/WPH-REP-Project-05-ToDo-List',
+        liveDemo: 'https://wph-rep-project-05-to-do-list.vercel.app/',
+      },
+    },
+    {
       id: 'Proj-06',
       title: 'Meal Order App',
       category: {
@@ -439,7 +490,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-12',
+      id: 'proj-09',
       title: 'Todo Management API (Backend)',
       category: {
         name: 'Web App',
@@ -482,7 +533,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-14',
+      id: 'proj-10',
       title: 'Modern Company Profile',
       category: {
         name: 'Landing Page',
@@ -521,6 +572,171 @@ export const projects: Projects = {
         github:
           'https://github.com/Hary300/Personal-Project-27-Company-Profile',
         liveDemo: 'https://personal-project-27-company-profile.vercel.app/',
+      },
+    },
+    {
+      id: 'proj-11',
+      title: 'Green Personal Portfolio',
+      category: {
+        name: 'Landing Page',
+        slug: 'landing-page',
+      },
+      image: GreenPortfolio,
+      description:
+        'A modern, eco-themed interactive portfolio built with seamless animations, dark style, and sleek UI components.',
+      techStack: [
+        {
+          name: 'Next.js',
+          bgColor: 'bg-zinc-200 dark:bg-zinc-800/80',
+          textColor: 'text-zinc-800 dark:text-zinc-300',
+          icon: RiNextjsFill,
+        },
+        {
+          name: 'TypeScript',
+          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
+          textColor: 'text-blue-800 dark:text-blue-300',
+          icon: SiTypescript,
+        },
+        {
+          name: 'Framer Motion',
+          bgColor: 'bg-purple-100 dark:bg-purple-950/60',
+          textColor: 'text-purple-800 dark:text-purple-300',
+          icon: SiFramer,
+        },
+        {
+          name: 'Shadcn UI',
+          bgColor: 'bg-slate-200 dark:bg-slate-800/80',
+          textColor: 'text-slate-800 dark:text-slate-300',
+          icon: SiShadcnui,
+        },
+      ],
+      links: {
+        github: 'https://github.com/Hary300/My-Portfolio',
+        liveDemo: 'https://my-portfolio-black-alpha-51.vercel.app/',
+      },
+    },
+    {
+      id: 'proj-12',
+      title: 'ElementDB',
+      category: {
+        name: 'Utility',
+        slug: 'utility',
+      },
+      image: ElementDb,
+      description:
+        'An interactive periodic table for exploring chemical elements, properties, and trends with fast data fetching.',
+      techStack: [
+        {
+          name: 'Next.js',
+          bgColor: 'bg-zinc-200 dark:bg-zinc-800/80',
+          textColor: 'text-zinc-800 dark:text-zinc-300',
+          icon: RiNextjsFill,
+        },
+        {
+          name: 'TypeScript',
+          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
+          textColor: 'text-blue-800 dark:text-blue-300',
+          icon: SiTypescript,
+        },
+        {
+          name: 'Framer Motion',
+          bgColor: 'bg-purple-100 dark:bg-purple-950/60',
+          textColor: 'text-purple-800 dark:text-purple-300',
+          icon: SiFramer,
+        },
+        {
+          name: 'React Query',
+          bgColor: 'bg-rose-100 dark:bg-rose-950/60',
+          textColor: 'text-rose-800 dark:text-rose-300',
+          icon: SiReactquery,
+        },
+      ],
+      links: {
+        github: 'https://github.com/Hary300/Personal-Project-30-Chemistry-DB',
+        liveDemo: 'https://personal-project-30-chemistry-db-sand.vercel.app/',
+      },
+    },
+    {
+      id: 'proj-13',
+      title: 'My Best Portfolio',
+      category: {
+        name: 'Landing Page',
+        slug: 'landing-page',
+      },
+      image: MyPortfolio,
+      description:
+        'A personal portfolio website featuring interactive sections, smooth navigation, and a fully validated contact form.',
+      techStack: [
+        {
+          name: 'React',
+          bgColor: 'bg-sky-100 dark:bg-sky-950/60',
+          textColor: 'text-sky-800 dark:text-sky-300',
+          icon: FaReact,
+        },
+        {
+          name: 'TypeScript',
+          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
+          textColor: 'text-blue-800 dark:text-blue-300',
+          icon: SiTypescript,
+        },
+        {
+          name: 'React Hook Form',
+          bgColor: 'bg-pink-100 dark:bg-pink-950/60',
+          textColor: 'text-pink-800 dark:text-pink-300',
+          icon: SiReacthookform,
+        },
+        {
+          name: 'Zod',
+          bgColor: 'bg-indigo-100 dark:bg-indigo-950/60',
+          textColor: 'text-indigo-800 dark:text-indigo-300',
+          icon: SiZod,
+        },
+      ],
+      links: {
+        github: 'https://github.com/Hary300/My-Best-Portfolio',
+        liveDemo: 'https://my-best-portfolio-three.vercel.app/',
+      },
+    },
+    {
+      id: 'proj-14',
+      title: 'Simple Portfolio',
+      category: {
+        name: 'Landing Page',
+        slug: 'landing-page',
+      },
+      image: SimplePortfolio,
+      description:
+        'A portfolio landing page designed with Tailwind CSS for clean layout structure and smooth responsiveness.',
+      techStack: [
+        {
+          name: 'HTML5',
+          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
+          textColor: 'text-orange-800 dark:text-orange-300',
+          icon: FaHtml5,
+        },
+        {
+          name: 'CSS3',
+          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
+          textColor: 'text-blue-800 dark:text-blue-300',
+          icon: FaCss3Alt,
+        },
+        {
+          name: 'Tailwind CSS',
+          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
+          textColor: 'text-teal-800 dark:text-teal-300',
+          icon: RiTailwindCssFill,
+        },
+        {
+          name: 'JavaScript',
+          bgColor: 'bg-amber-100 dark:bg-amber-950/60',
+          textColor: 'text-amber-800 dark:text-amber-300',
+          icon: BsJavascript,
+        },
+      ],
+      links: {
+        github:
+          'https://github.com/Hary300/WPH-Project-15-Simple-Portfolio-Tailwinds',
+        liveDemo: 'https://wph-project-15-simple-portfolio-tai.vercel.app/',
       },
     },
   ],

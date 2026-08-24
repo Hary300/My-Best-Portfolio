@@ -1,6 +1,7 @@
 import { contactData } from '@/data/contact';
 import { themeStore } from '@/store/themeStore';
 import darkContact from '@/assets/images/dark-contact.webp';
+import lightContact from '@/assets/images/light-contact.webp';
 
 const ContactHeader = () => {
   const isDark = themeStore((state) => state.isDark);
@@ -20,9 +21,9 @@ const ContactHeader = () => {
 
       <div className='flex-[50%] w-full max-w-80 lg:max-w-150 '>
         <img
-          src={isDark ? darkContact : ''}
+          src={isDark ? darkContact : lightContact}
           alt='Contact me image'
-          className='w-full'
+          className='brightness-96 w-full'
         />
       </div>
     </section>
