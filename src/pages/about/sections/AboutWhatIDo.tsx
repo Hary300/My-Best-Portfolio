@@ -6,7 +6,7 @@ const AboutWhatIDo = () => {
   return (
     <section
       id='about-what-i-do'
-      className='p-4 rounded-md bg-portfolio-light-secondary dark:bg-portfolio-dark-secondary border-2 flex flex-col gap-4 flex-1'
+      className='p-4 rounded-md bg-portfolio-light-secondary dark:bg-portfolio-dark-secondary border-2 flex flex-col gap-4 xl:flex-1 shadow-subtle'
     >
       <div className='flex gap-2 items-center'>
         <div className='size-8 aspect-square shrink-0 rounded-full flex justify-center items-center bg-portfolio-green-soft dark:bg-portfolio-green/40'>

@@ -21,8 +21,28 @@ interface TechStack {
   icon: IconType;
 }
 
+export type Categories =
+  | 'Web App'
+  | 'Landing Page'
+  | 'Utility'
+  | 'UI Component'
+  | 'Game';
+
+export type CategorySlug =
+  | 'web-app'
+  | 'landing-page'
+  | 'utility'
+  | 'ui-component'
+  | 'game';
+
+export interface Category {
+  name: Categories;
+  slug: CategorySlug;
+}
+
 export interface Project {
   id: string;
+  category: Category;
   title: string;
   image: string;
   description: string;
@@ -33,9 +53,19 @@ export interface Project {
   };
 }
 
+interface Total {
+  all: number;
+  webApp: number;
+  landingPage: number;
+  utility: number;
+  uiComponent: number;
+  game: number;
+}
+
 interface Projects {
   featuredProjects: Project[];
   allProjects: Project[];
+  total: Total;
 }
 
 export const projects: Projects = {
@@ -46,6 +76,10 @@ export const projects: Projects = {
     {
       id: 'featProj-01',
       title: 'Library Management App',
+      category: {
+        name: 'Web App',
+        slug: 'web-app',
+      },
       image:
         'https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1000',
       description:
@@ -85,6 +119,10 @@ export const projects: Projects = {
     {
       id: 'featProj-02',
       title: 'Todo Management App',
+      category: {
+        name: 'Web App',
+        slug: 'web-app',
+      },
       image:
         'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000',
       description:
@@ -124,6 +162,10 @@ export const projects: Projects = {
     {
       id: 'featProj-03',
       title: 'Hary Movies DB',
+      category: {
+        name: 'Web App',
+        slug: 'web-app',
+      },
       image:
         'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1000',
       description:
@@ -163,6 +205,10 @@ export const projects: Projects = {
     {
       id: 'featProj-04',
       title: 'Itachi Landing Page',
+      category: {
+        name: 'Landing Page',
+        slug: 'landing-page',
+      },
       image:
         'https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=1000',
       description:
@@ -207,6 +253,10 @@ export const projects: Projects = {
     {
       id: 'proj-01',
       title: 'Library Management App',
+      category: {
+        name: 'Web App',
+        slug: 'web-app',
+      },
       image:
         'https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1000',
       description:
@@ -240,6 +290,10 @@ export const projects: Projects = {
     {
       id: 'proj-02',
       title: 'Todo Management App',
+      category: {
+        name: 'Web App',
+        slug: 'web-app',
+      },
       image:
         'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000',
       description:
@@ -273,6 +327,10 @@ export const projects: Projects = {
     {
       id: 'proj-03',
       title: 'Hary Movies DB',
+      category: {
+        name: 'Web App',
+        slug: 'web-app',
+      },
       image:
         'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1000',
       description:
@@ -306,6 +364,10 @@ export const projects: Projects = {
     {
       id: 'proj-04',
       title: 'Itachi Landing Page',
+      category: {
+        name: 'Landing Page',
+        slug: 'landing-page',
+      },
       image:
         'https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=1000',
       description:
@@ -340,6 +402,10 @@ export const projects: Projects = {
     {
       id: 'proj-05',
       title: 'Time Tracking Dashboard',
+      category: {
+        name: 'Web App',
+        slug: 'web-app',
+      },
       image:
         'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000',
       description:
@@ -375,6 +441,10 @@ export const projects: Projects = {
     {
       id: 'proj-06',
       title: 'Meal Order App',
+      category: {
+        name: 'Web App',
+        slug: 'web-app',
+      },
       image:
         'https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=1000',
       description:
@@ -409,6 +479,10 @@ export const projects: Projects = {
     {
       id: 'proj-07',
       title: 'Voice Counter App',
+      category: {
+        name: 'Utility',
+        slug: 'utility',
+      },
       image:
         'https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=1000',
       description:
@@ -442,6 +516,10 @@ export const projects: Projects = {
     {
       id: 'proj-08',
       title: 'Neumorphic Calculator',
+      category: {
+        name: 'Utility',
+        slug: 'utility',
+      },
       image:
         'https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=1000',
       description:
@@ -475,6 +553,10 @@ export const projects: Projects = {
     {
       id: 'proj-09',
       title: 'Interactive Rating Component',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
       image:
         'https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1000',
       description:
@@ -482,7 +564,6 @@ export const projects: Projects = {
       techStack: [
         {
           name: 'React',
-
           bgColor: 'bg-sky-100 dark:bg-sky-950/60',
           textColor: 'text-sky-800 dark:text-sky-300',
           icon: FaReact,
@@ -495,7 +576,6 @@ export const projects: Projects = {
         },
         {
           name: 'Tailwind CSS',
-
           bgColor: 'bg-teal-100 dark:bg-teal-950/60',
           textColor: 'text-teal-800 dark:text-teal-300',
           icon: RiTailwindCssFill,
@@ -510,6 +590,10 @@ export const projects: Projects = {
     {
       id: 'proj-10',
       title: 'Contact Form API',
+      category: {
+        name: 'Utility',
+        slug: 'utility',
+      },
       image:
         'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1000',
       description:
@@ -545,5 +629,61 @@ export const projects: Projects = {
         liveDemo: 'https://contact-form-api.vercel.app',
       },
     },
+    {
+      id: 'proj-11',
+      category: {
+        name: 'Game',
+        slug: 'game',
+      },
+      title: 'Neon Snake',
+      image:
+        'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000',
+      description:
+        'A classic snake game redesigned with a modern neon interface, smooth controls, increasing difficulty, and a persistent high score.',
+      techStack: [
+        {
+          name: 'React',
+          bgColor: 'bg-sky-100 dark:bg-sky-950/60',
+          textColor: 'text-sky-800 dark:text-sky-300',
+          icon: FaReact,
+        },
+        {
+          name: 'TypeScript',
+          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
+          textColor: 'text-blue-800 dark:text-blue-300',
+          icon: SiTypescript,
+        },
+        {
+          name: 'Tailwind CSS',
+          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
+          textColor: 'text-teal-800 dark:text-teal-300',
+          icon: RiTailwindCssFill,
+        },
+      ],
+      links: {
+        github: 'https://github.com/Hary300/neon-snake',
+        liveDemo: 'https://neon-snake.vercel.app',
+      },
+    },
   ],
+  get total(): Total {
+    return {
+      all: this.allProjects.length,
+      webApp: this.allProjects.filter(
+        (project) => project.category.name === 'Web App'
+      ).length,
+      landingPage: this.allProjects.filter(
+        (project) => project.category.name === 'Landing Page'
+      ).length,
+      uiComponent: this.allProjects.filter(
+        (project) => project.category.name === 'UI Component'
+      ).length,
+      utility: this.allProjects.filter(
+        (project) => project.category.name === 'Utility'
+      ).length,
+      game: this.allProjects.filter(
+        (project) => project.category.name === 'Game'
+      ).length,
+    };
+  },
 };

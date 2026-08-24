@@ -20,12 +20,12 @@ const DarkModeButton = () => {
       type='button'
       onClick={handleClickDarkMode}
       aria-label='Toggle dark mode'
-      className='relative flex items-center justify-between w-16 h-8 px-1.5 rounded-full bg-portfolio-gray/20 dark:bg-portfolio-card-secondary/80 border border-portfolio-border/40 dark:border-portfolio-border/20 cursor-pointer transition-colors duration-300 hover:border-portfolio-green/50'
+      className='relative flex items-center justify-between w-16 h-8 px-1.5 shrink-0 rounded-full bg-portfolio-gray/20 dark:bg-portfolio-card-secondary/80 border border-portfolio-border/40 dark:border-portfolio-border/20 cursor-pointer transition-colors duration-300 hover:border-portfolio-green/50'
     >
       <div
         className={cn(
           'absolute top-1/2 -translate-y-1/2 size-5 rounded-full bg-portfolio-green shadow-sm transition-all duration-300 flex items-center justify-center',
-          isDark ? 'left-1' : 'left-7.5'
+          isDark ? 'left-1' : 'left-9'
         )}
       >
         {isDark ? (

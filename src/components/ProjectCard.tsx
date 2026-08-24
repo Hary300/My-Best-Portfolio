@@ -9,12 +9,15 @@ interface ProjectCardProps {
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <div className='rounded-2xl flex flex-col gap-6 p-4 border-2 shadow-subtle dark:shadow-green'>
-      <div className='rounded-2xl overflow-hidden h-50'>
+      <div className='relative rounded-2xl overflow-hidden h-50'>
         <img
           src={project.image}
           alt={`${project.title} image`}
           className='h-full w-full object-cover object-center'
         />
+        <p className='absolute top-3 left-3 px-3 py-1 text-xs font-semibold tracking-wide rounded-full bg-portfolio-light/90 dark:bg-portfolio-dark/80 backdrop-blur-md text-portfolio-green border border-portfolio-green shadow-sm'>
+          {project.category.name}
+        </p>
       </div>
       <p className='font-semibold text-xl'>{project.title}</p>
       <p className='text-zinc-500'>{project.description}</p>

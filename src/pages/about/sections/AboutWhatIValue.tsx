@@ -6,7 +6,7 @@ const AboutWhatIValue = () => {
   return (
     <section
       id='about-what-i-value'
-      className='p-4 rounded-md bg-portfolio-light-secondary dark:bg-portfolio-dark-secondary border-2 flex flex-col gap-4 flex-1'
+      className='p-4 rounded-md bg-portfolio-light-secondary dark:bg-portfolio-dark-secondary border-2 flex flex-col gap-4 xl:flex-1 shadow-subtle'
     >
       <div className='flex gap-2 items-center'>
         <div className='size-8 aspect-square shrink-0 rounded-full flex justify-center items-center bg-portfolio-green-soft dark:bg-portfolio-green/40'>
@@ -16,7 +16,7 @@ const AboutWhatIValue = () => {
           {data.title}
         </p>
       </div>
-      <div className='flex gap-1'>
+      <div className='lg:flex gap-1 grid grid-cols-2'>
         {data.items.map((item) => {
           const Icon = item.icon;
           return (

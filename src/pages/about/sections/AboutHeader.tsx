@@ -25,7 +25,7 @@ const AboutHeader = () => {
             <p key={i}>{paragraph}</p>
           ))}
         </div>
-        <div className='bg-portfolio-light-secondary dark:bg-portfolio-dark-secondary p-4 rounded-md border-2 flex gap-4 '>
+        <div className='bg-portfolio-light-secondary dark:bg-portfolio-dark-secondary p-4 rounded-md border-2 flex gap-4 shadow-subtle'>
           <QuoteIcon className='size-8 text-portfolio-green' />
           <p className='max-w-60 py-1'>
             {parts[0]} <strong className='font-bold'>{highlight}</strong>{' '}

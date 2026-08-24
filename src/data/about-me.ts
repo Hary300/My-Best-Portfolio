@@ -10,6 +10,7 @@ import { BsBarChart } from 'react-icons/bs';
 import { MdMailOutline } from 'react-icons/md';
 import { BiSolidQuoteAltLeft } from 'react-icons/bi';
 import type { IconType } from 'react-icons/lib';
+import { MdArrowOutward } from 'react-icons/md';
 
 export interface AboutQuote {
   icon: IconType;
@@ -53,7 +54,7 @@ export interface AboutCTA {
   title: string;
   subtitle: string;
   buttonText: string;
-  buttonLink: string;
+  buttonIcon: IconType;
 }
 
 export interface AboutMe {
@@ -134,6 +135,6 @@ export const aboutMe: AboutMe = {
     title: "Let's work together!",
     subtitle: "I'm open to new opportunities and interesting projects.",
     buttonText: 'Get In Touch',
-    buttonLink: '/contact',
+    buttonIcon: MdArrowOutward,
   },
 };
