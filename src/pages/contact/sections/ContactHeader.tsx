@@ -19,7 +19,7 @@ const ContactHeader = () => {
         <div className='flex flex-col gap-2 max-w-95'>{data.description}</div>
       </div>
 
-      <div className='flex-[50%] w-full max-w-80 lg:max-w-150 '>
+      <div className='flex-[50%] w-full max-w-80 lg:max-w-100 '>
         <img
           src={isDark ? darkContact : lightContact}
           alt='Contact me image'

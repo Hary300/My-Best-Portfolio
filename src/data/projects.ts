@@ -32,6 +32,7 @@ import ElementDb from '@/assets/images/projects-ss/ElementDb.webp';
 import MyPortfolio from '@/assets/images/projects-ss/MyPortfolio.webp';
 import SimpleTodoList from '@/assets/images/projects-ss/SimpleTodoList.webp';
 import SimplePortfolio from '@/assets/images/projects-ss/SimplePortfolio.webp';
+import SharinganEyes from '@/assets/images/projects-ss/SharinganEyes.webp';
 
 export const projects: Projects = {
   /** ==============
@@ -737,6 +738,35 @@ export const projects: Projects = {
         github:
           'https://github.com/Hary300/WPH-Project-15-Simple-Portfolio-Tailwinds',
         liveDemo: 'https://wph-project-15-simple-portfolio-tai.vercel.app/',
+      },
+    },
+    {
+      id: 'proj-15',
+      title: 'Sharingan Spinning Animation',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
+      image: SharinganEyes,
+      description:
+        'An interactive anime-inspired Sharingan eye visual crafted purely using CSS keyframe animations and structural HTML layout.',
+      techStack: [
+        {
+          name: 'HTML5',
+          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
+          textColor: 'text-orange-800 dark:text-orange-300',
+          icon: FaHtml5,
+        },
+        {
+          name: 'CSS3',
+          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
+          textColor: 'text-blue-800 dark:text-blue-300',
+          icon: FaCss3Alt,
+        },
+      ],
+      links: {
+        github: 'https://github.com/Hary300/Personal-Project-05-Sharingan',
+        liveDemo: 'https://sharingan-hary300.vercel.app/',
       },
     },
   ],
