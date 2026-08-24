@@ -17,6 +17,12 @@ export interface ScheduleCallCard {
   buttonLink: string;
 }
 
+interface Field {
+  label: string;
+  name: 'name' | 'email' | 'subject' | 'message';
+  isTextArea: boolean;
+}
+
 export interface ContactSectionData {
   header: {
     title: string;
@@ -26,13 +32,9 @@ export interface ContactSectionData {
   form: {
     title: string;
     description: string;
-    fields: {
-      name: { label: string; placeholder: string };
-      email: { label: string; placeholder: string };
-      subject: { label: string; placeholder: string };
-      message: { label: string; placeholder: string };
-    };
+    fields: Field[];
     submitButtonText: string;
+    loadingButtonText: string;
   };
   getInTouch: {
     title: string;
@@ -52,25 +54,30 @@ export const contactData: ContactSectionData = {
   form: {
     title: 'Send Me a Message',
     description: "Fill out the form below and I'll get back to you shortly.",
-    fields: {
-      name: {
-        label: 'Your Name',
-        placeholder: 'Enter your name',
+    fields: [
+      {
+        label: 'Name',
+        name: 'name',
+        isTextArea: false,
       },
-      email: {
-        label: 'Your Email',
-        placeholder: 'Enter your email',
+      {
+        label: 'Email',
+        name: 'email',
+        isTextArea: false,
       },
-      subject: {
+      {
         label: 'Subject',
-        placeholder: 'Enter the subject',
+        name: 'subject',
+        isTextArea: false,
       },
-      message: {
+      {
         label: 'Message',
-        placeholder: 'Type your message here...',
+        name: 'message',
+        isTextArea: true,
       },
-    },
+    ],
     submitButtonText: 'Send Message',
+    loadingButtonText: 'Sending...',
   },
   getInTouch: {
     title: 'Get in Touch',

@@ -19,7 +19,7 @@ const MobileMenu = () => {
     setSearchParams(params);
   };
   return (
-    <div className='fixed bottom-0 sm:hidden flex justify-between dark:bg-portfolio-dark-secondary bg-portfolio-light-secondary items-center w-full dark:border-t-[1.5px]'>
+    <div className='fixed bottom-0 sm:hidden flex justify-between dark:bg-portfolio-dark-secondary bg-portfolio-light-secondary items-center w-full dark:border-t-[1.5px] z-10'>
       {mobileMenus.map((menu) => {
         const Icon = menu.icon;
         return (

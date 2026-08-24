@@ -1,0 +1,13 @@
+import { z } from 'zod';
+
+export const contactFormSchema = z.object({
+  name: z.string().min(1, 'Your name is required'),
+  email: z.string().min(1, 'Email is required').email('Invalid email format'),
+  subject: z.string().min(1, 'Subject is required'),
+  message: z
+    .string()
+    .min(1, 'Message is required')
+    .min(6, 'Message should be at least 6 characters'),
+});
+
+export type ContactFormSchema = z.infer<typeof contactFormSchema>;
