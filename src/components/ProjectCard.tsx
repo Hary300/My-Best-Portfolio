@@ -1,6 +1,6 @@
-import type { Project } from '@/data/projects';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
+import type { Project } from '@/types/projects';
 
 interface ProjectCardProps {
   project: Project;
@@ -13,7 +13,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <img
           src={project.image}
           alt={`${project.title} image`}
-          className='h-full w-full object-cover object-center'
+          className='h-full w-full object-cover object-top'
         />
         <p className='absolute top-3 left-3 px-3 py-1 text-xs font-semibold tracking-wide rounded-full bg-portfolio-light/90 dark:bg-portfolio-dark/80 backdrop-blur-md text-portfolio-green border border-portfolio-green shadow-sm'>
           {project.category.name}

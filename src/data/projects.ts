@@ -1,7 +1,6 @@
-import type { IconType } from 'react-icons/lib';
 import { FaNodeJs } from 'react-icons/fa';
 import { FaReact } from 'react-icons/fa';
-import { SiTypescript } from 'react-icons/si';
+import { SiMongoose, SiReacthookform, SiTypescript } from 'react-icons/si';
 import { TbApi } from 'react-icons/tb';
 import { RiNextjsFill } from 'react-icons/ri';
 import { SiMongodb } from 'react-icons/si';
@@ -13,60 +12,16 @@ import { SiZod } from 'react-icons/si';
 import { BsJavascript } from 'react-icons/bs';
 import { FaCss3Alt } from 'react-icons/fa';
 import { FaHtml5 } from 'react-icons/fa6';
-
-interface TechStack {
-  name: string;
-  bgColor: string;
-  textColor: string;
-  icon: IconType;
-}
-
-export type Categories =
-  | 'Web App'
-  | 'Landing Page'
-  | 'Utility'
-  | 'UI Component'
-  | 'Game';
-
-export type CategorySlug =
-  | 'web-app'
-  | 'landing-page'
-  | 'utility'
-  | 'ui-component'
-  | 'game';
-
-export interface Category {
-  name: Categories;
-  slug: CategorySlug;
-}
-
-export interface Project {
-  id: string;
-  category: Category;
-  title: string;
-  image: string;
-  description: string;
-  techStack: TechStack[];
-  links: {
-    github: string;
-    liveDemo: string;
-  };
-}
-
-interface Total {
-  all: number;
-  webApp: number;
-  landingPage: number;
-  utility: number;
-  uiComponent: number;
-  game: number;
-}
-
-interface Projects {
-  featuredProjects: Project[];
-  allProjects: Project[];
-  total: Total;
-}
+import LibraryApp from '@/assets/images/projects-ss/LibraryApp.webp';
+import RestaurantApp from '@/assets/images/projects-ss/RestaurantApp.webp';
+import MovieDB from '@/assets/images/projects-ss/MovieDB.webp';
+import TodoListApp from '@/assets/images/projects-ss/TodoListApp.webp';
+import TodoListApi from '@/assets/images/projects-ss/TodoListAPI.webp';
+import CompanyProfile from '@/assets/images/projects-ss/CompanyProfile.webp';
+import ItachiLandingPage from '@/assets/images/projects-ss/ItachiLandingPage.webp';
+import VoiceCounter from '@/assets/images/projects-ss/VoiceCounter.webp';
+import NeumorphicCalculator from '@/assets/images/projects-ss/NeumorphicCalculator.webp';
+import type { Projects, Total } from '@/types/projects';
 
 export const projects: Projects = {
   /** ==============
@@ -75,15 +30,14 @@ export const projects: Projects = {
   featuredProjects: [
     {
       id: 'featProj-01',
-      title: 'Library Management App',
+      title: 'Library App',
       category: {
         name: 'Web App',
         slug: 'web-app',
       },
-      image:
-        'https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1000',
+      image: LibraryApp,
       description:
-        'A full-stack library platform for discovering books, managing borrowing, and handling user accounts with role-based access.',
+        'A library platform for discovering books, managing borrowing, and handling user accounts with role-based access.',
       techStack: [
         {
           name: 'Next.js',
@@ -98,16 +52,16 @@ export const projects: Projects = {
           icon: SiTypescript,
         },
         {
-          name: 'Node.js',
-          bgColor: 'bg-emerald-100 dark:bg-emerald-950/60',
-          textColor: 'text-emerald-800 dark:text-emerald-300',
-          icon: FaNodeJs,
+          name: 'React Query',
+          bgColor: 'bg-rose-100 dark:bg-rose-950/60',
+          textColor: 'text-rose-800 dark:text-rose-300',
+          icon: SiReactquery,
         },
         {
-          name: 'MongoDB',
-          bgColor: 'bg-emerald-100 dark:bg-emerald-950/60',
-          textColor: 'text-emerald-800 dark:text-emerald-300',
-          icon: SiMongodb,
+          name: 'Tailwind CSS',
+          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
+          textColor: 'text-teal-800 dark:text-teal-300',
+          icon: RiTailwindCssFill,
         },
       ],
       links: {
@@ -118,21 +72,20 @@ export const projects: Projects = {
 
     {
       id: 'featProj-02',
-      title: 'Todo Management App',
+      title: 'Meal Order App',
       category: {
         name: 'Web App',
         slug: 'web-app',
       },
-      image:
-        'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000',
+      image: RestaurantApp,
       description:
-        'A productivity application for organizing daily tasks, priorities, schedules, and completed activities through a responsive interface.',
+        'A food ordering interface where users can browse meals, manage their cart, and review their selected orders.',
       techStack: [
         {
-          name: 'React',
-          bgColor: 'bg-sky-100 dark:bg-sky-950/60',
-          textColor: 'text-sky-800 dark:text-sky-300',
-          icon: FaReact,
+          name: 'Next.js',
+          bgColor: 'bg-zinc-200 dark:bg-zinc-800/80',
+          textColor: 'text-zinc-800 dark:text-zinc-300',
+          icon: RiNextjsFill,
         },
         {
           name: 'TypeScript',
@@ -141,21 +94,21 @@ export const projects: Projects = {
           icon: SiTypescript,
         },
         {
-          name: 'Express',
-          bgColor: 'bg-zinc-200 dark:bg-zinc-800/80',
-          textColor: 'text-zinc-800 dark:text-zinc-300',
-          icon: SiExpress,
+          name: 'React Query',
+          bgColor: 'bg-rose-100 dark:bg-rose-950/60',
+          textColor: 'text-rose-800 dark:text-rose-300',
+          icon: SiReactquery,
         },
         {
-          name: 'MongoDB',
-          bgColor: 'bg-emerald-100 dark:bg-emerald-950/60',
-          textColor: 'text-emerald-800 dark:text-emerald-300',
-          icon: SiMongodb,
+          name: 'Tailwind CSS',
+          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
+          textColor: 'text-teal-800 dark:text-teal-300',
+          icon: RiTailwindCssFill,
         },
       ],
       links: {
-        github: 'https://github.com/Hary300/Personal-Project-25-Todo-App',
-        liveDemo: 'https://personal-project-25-todo-app-frontend.vercel.app',
+        github: 'https://github.com/Hary300/Personal-Project-29-Meal-Order-App',
+        liveDemo: 'https://personal-project-29-meal-order-app.vercel.app/',
       },
     },
 
@@ -166,16 +119,15 @@ export const projects: Projects = {
         name: 'Web App',
         slug: 'web-app',
       },
-      image:
-        'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1000',
+      image: MovieDB,
       description:
-        'A movie discovery platform where users can search, explore popular titles, view movie details, and save their favorite content.',
+        'A movie discovery platform where users can search, explore movies, view movie details, and save their favorite content.',
       techStack: [
         {
-          name: 'Next.js',
-          bgColor: 'bg-zinc-200 dark:bg-zinc-800/80',
-          textColor: 'text-zinc-800 dark:text-zinc-300',
-          icon: RiNextjsFill,
+          name: 'React',
+          bgColor: 'bg-sky-100 dark:bg-sky-950/60',
+          textColor: 'text-sky-800 dark:text-sky-300',
+          icon: FaReact,
         },
         {
           name: 'TypeScript',
@@ -197,51 +149,8 @@ export const projects: Projects = {
         },
       ],
       links: {
-        github: 'https://github.com/Hary300',
-        liveDemo: 'https://hary-movies-db.vercel.app',
-      },
-    },
-
-    {
-      id: 'featProj-04',
-      title: 'Itachi Landing Page',
-      category: {
-        name: 'Landing Page',
-        slug: 'landing-page',
-      },
-      image:
-        'https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=1000',
-      description:
-        'A visually focused landing page inspired by Itachi Uchiha, featuring responsive layouts, animations, and interactive content sections.',
-      techStack: [
-        {
-          name: 'React',
-          bgColor: 'bg-sky-100 dark:bg-sky-950/60',
-          textColor: 'text-sky-800 dark:text-sky-300',
-          icon: FaReact,
-        },
-        {
-          name: 'TypeScript',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: SiTypescript,
-        },
-        {
-          name: 'Tailwind CSS',
-          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
-          textColor: 'text-teal-800 dark:text-teal-300',
-          icon: RiTailwindCssFill,
-        },
-        {
-          name: 'Framer Motion',
-          bgColor: 'bg-purple-100 dark:bg-purple-950/60',
-          textColor: 'text-purple-800 dark:text-purple-300',
-          icon: SiFramer,
-        },
-      ],
-      links: {
-        github: 'https://github.com/Hary300',
-        liveDemo: 'https://itachi-landing-page.vercel.app',
+        github: 'https://github.com/Hary300/Personal-Project-28-Movie-DB-App',
+        liveDemo: 'https://personal-project-28-movie-db-app.vercel.app/',
       },
     },
   ],
@@ -257,10 +166,9 @@ export const projects: Projects = {
         name: 'Web App',
         slug: 'web-app',
       },
-      image:
-        'https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1000',
+      image: LibraryApp,
       description:
-        'A full-stack library platform for discovering books, managing borrowing, and handling user accounts with role-based access.',
+        'A library platform for discovering books, managing borrowing, and handling user accounts with role-based access.',
       techStack: [
         {
           name: 'Next.js',
@@ -275,10 +183,16 @@ export const projects: Projects = {
           icon: SiTypescript,
         },
         {
-          name: 'MongoDB',
-          bgColor: 'bg-emerald-100 dark:bg-emerald-950/60',
-          textColor: 'text-emerald-800 dark:text-emerald-300',
-          icon: SiMongodb,
+          name: 'React Query',
+          bgColor: 'bg-rose-100 dark:bg-rose-950/60',
+          textColor: 'text-rose-800 dark:text-rose-300',
+          icon: SiReactquery,
+        },
+        {
+          name: 'Tailwind CSS',
+          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
+          textColor: 'text-teal-800 dark:text-teal-300',
+          icon: RiTailwindCssFill,
         },
       ],
       links: {
@@ -286,7 +200,6 @@ export const projects: Projects = {
         liveDemo: 'https://personal-project-31-library-app.vercel.app',
       },
     },
-
     {
       id: 'proj-02',
       title: 'Todo Management App',
@@ -294,8 +207,7 @@ export const projects: Projects = {
         name: 'Web App',
         slug: 'web-app',
       },
-      image:
-        'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000',
+      image: TodoListApp,
       description:
         'A productivity application for organizing daily tasks, priorities, schedules, and completed activities.',
       techStack: [
@@ -312,18 +224,24 @@ export const projects: Projects = {
           icon: SiTypescript,
         },
         {
-          name: 'Express',
-          bgColor: 'bg-zinc-200 dark:bg-zinc-800/80',
-          textColor: 'text-zinc-800 dark:text-zinc-300',
-          icon: SiExpress,
+          name: 'React Query',
+          bgColor: 'bg-rose-100 dark:bg-rose-950/60',
+          textColor: 'text-rose-800 dark:text-rose-300',
+          icon: SiReactquery,
+        },
+        {
+          name: 'Tailwind CSS',
+          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
+          textColor: 'text-teal-800 dark:text-teal-300',
+          icon: RiTailwindCssFill,
         },
       ],
       links: {
-        github: 'https://github.com/Hary300/Personal-Project-25-Todo-App',
-        liveDemo: 'https://personal-project-25-todo-app-frontend.vercel.app',
+        github:
+          'https://github.com/Hary300/personal-Project-26-todo-app-frontend',
+        liveDemo: 'https://personal-project-26-todo-app-fronte.vercel.app',
       },
     },
-
     {
       id: 'proj-03',
       title: 'Hary Movies DB',
@@ -331,10 +249,86 @@ export const projects: Projects = {
         name: 'Web App',
         slug: 'web-app',
       },
-      image:
-        'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1000',
+      image: MovieDB,
       description:
-        'A movie discovery platform for searching movies, exploring popular titles, and viewing detailed movie information.',
+        'A movie discovery platform where users can search, explore movies, view movie details, and save their favorite content.',
+      techStack: [
+        {
+          name: 'React',
+          bgColor: 'bg-sky-100 dark:bg-sky-950/60',
+          textColor: 'text-sky-800 dark:text-sky-300',
+          icon: FaReact,
+        },
+        {
+          name: 'TypeScript',
+          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
+          textColor: 'text-blue-800 dark:text-blue-300',
+          icon: SiTypescript,
+        },
+        {
+          name: 'Framer Motion',
+          bgColor: 'bg-purple-100 dark:bg-purple-950/60',
+          textColor: 'text-purple-800 dark:text-purple-300',
+          icon: SiFramer,
+        },
+        {
+          name: 'TMDB API',
+          bgColor: 'bg-indigo-100 dark:bg-indigo-950/60',
+          textColor: 'text-indigo-800 dark:text-indigo-300',
+          icon: TbApi,
+        },
+      ],
+      links: {
+        github: 'https://github.com/Hary300/Personal-Project-28-Movie-DB-App',
+        liveDemo: 'https://personal-project-28-movie-db-app.vercel.app/',
+      },
+    },
+    {
+      id: 'proj-04',
+      title: 'Itachi Landing Page',
+      category: {
+        name: 'Landing Page',
+        slug: 'landing-page',
+      },
+      image: ItachiLandingPage,
+      description:
+        'A visually focused anime-inspired landing page with responsive layouts, animations, and interactive content sections.',
+      techStack: [
+        {
+          name: 'HTML',
+          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
+          textColor: 'text-orange-800 dark:text-orange-300',
+          icon: FaHtml5,
+        },
+        {
+          name: 'CSS',
+          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
+          textColor: 'text-blue-800 dark:text-blue-300',
+          icon: FaCss3Alt,
+        },
+        {
+          name: 'JavaScript',
+          bgColor: 'bg-amber-100 dark:bg-amber-950/60',
+          textColor: 'text-amber-800 dark:text-amber-300',
+          icon: BsJavascript,
+        },
+      ],
+      links: {
+        github:
+          'https://github.com/Hary300/WPH-REP-Project-01-Itachi-landing-page',
+        liveDemo: 'https://itachi-uchiha-hary300.vercel.app/',
+      },
+    },
+    {
+      id: 'Proj-06',
+      title: 'Meal Order App',
+      category: {
+        name: 'Web App',
+        slug: 'web-app',
+      },
+      image: RestaurantApp,
+      description:
+        'A food ordering interface where users can browse meals, manage their cart, and review their selected orders.',
       techStack: [
         {
           name: 'Next.js',
@@ -349,133 +343,23 @@ export const projects: Projects = {
           icon: SiTypescript,
         },
         {
-          name: 'TMDB API',
-          bgColor: 'bg-indigo-100 dark:bg-indigo-950/60',
-          textColor: 'text-indigo-800 dark:text-indigo-300',
-          icon: TbApi,
-        },
-      ],
-      links: {
-        github: 'https://github.com/Hary300',
-        liveDemo: 'https://hary-movies-db.vercel.app',
-      },
-    },
-
-    {
-      id: 'proj-04',
-      title: 'Itachi Landing Page',
-      category: {
-        name: 'Landing Page',
-        slug: 'landing-page',
-      },
-      image:
-        'https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=1000',
-      description:
-        'A visually focused anime-inspired landing page with responsive layouts, animations, and interactive content sections.',
-      techStack: [
-        {
-          name: 'React',
-          bgColor: 'bg-sky-100 dark:bg-sky-950/60',
-          textColor: 'text-sky-800 dark:text-sky-300',
-          icon: FaReact,
+          name: 'React Query',
+          bgColor: 'bg-rose-100 dark:bg-rose-950/60',
+          textColor: 'text-rose-800 dark:text-rose-300',
+          icon: SiReactquery,
         },
         {
           name: 'Tailwind CSS',
-
-          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
-          textColor: 'text-teal-800 dark:text-teal-300',
-          icon: RiTailwindCssFill,
-        },
-        {
-          name: 'Framer Motion',
-          bgColor: 'bg-purple-100 dark:bg-purple-950/60',
-          textColor: 'text-purple-800 dark:text-purple-300',
-          icon: SiFramer,
-        },
-      ],
-      links: {
-        github: 'https://github.com/Hary300',
-        liveDemo: 'https://itachi-landing-page.vercel.app',
-      },
-    },
-
-    {
-      id: 'proj-05',
-      title: 'Time Tracking Dashboard',
-      category: {
-        name: 'Web App',
-        slug: 'web-app',
-      },
-      image:
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000',
-      description:
-        'A responsive dashboard for tracking working hours, monitoring activities, and visualizing productivity data.',
-      techStack: [
-        {
-          name: 'React',
-
-          bgColor: 'bg-sky-100 dark:bg-sky-950/60',
-          textColor: 'text-sky-800 dark:text-sky-300',
-          icon: FaReact,
-        },
-        {
-          name: 'TypeScript',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: SiTypescript,
-        },
-        {
-          name: 'Tailwind CSS',
-
           bgColor: 'bg-teal-100 dark:bg-teal-950/60',
           textColor: 'text-teal-800 dark:text-teal-300',
           icon: RiTailwindCssFill,
         },
       ],
       links: {
-        github: 'https://github.com/Hary300',
-        liveDemo: 'https://time-tracking-dashboard.vercel.app',
+        github: 'https://github.com/Hary300/Personal-Project-29-Meal-Order-App',
+        liveDemo: 'https://personal-project-29-meal-order-app.vercel.app/',
       },
     },
-
-    {
-      id: 'proj-06',
-      title: 'Meal Order App',
-      category: {
-        name: 'Web App',
-        slug: 'web-app',
-      },
-      image:
-        'https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=1000',
-      description:
-        'A food ordering interface where users can browse meals, manage their cart, and review their selected orders.',
-      techStack: [
-        {
-          name: 'React',
-
-          bgColor: 'bg-sky-100 dark:bg-sky-950/60',
-          textColor: 'text-sky-800 dark:text-sky-300',
-          icon: FaReact,
-        },
-        {
-          name: 'TypeScript',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: SiTypescript,
-        },
-        {
-          name: 'CSS',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: FaCss3Alt,
-        },
-      ],
-      links: {
-        github: 'https://github.com/Hary300',
-        liveDemo: 'https://meal-order-app.vercel.app',
-      },
-    },
-
     {
       id: 'proj-07',
       title: 'Voice Counter App',
@@ -483,11 +367,16 @@ export const projects: Projects = {
         name: 'Utility',
         slug: 'utility',
       },
-      image:
-        'https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=1000',
+      image: VoiceCounter,
       description:
         'An experimental web application that uses voice interaction to control and update a simple counter.',
       techStack: [
+        {
+          name: 'HTML',
+          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
+          textColor: 'text-orange-800 dark:text-orange-300',
+          icon: FaHtml5,
+        },
         {
           name: 'JavaScript',
           bgColor: 'bg-amber-100 dark:bg-amber-950/60',
@@ -508,11 +397,11 @@ export const projects: Projects = {
         },
       ],
       links: {
-        github: 'https://github.com/Hary300',
+        github:
+          'https://github.com/Hary300/Personal-Project-06-Voice-Counter-App',
         liveDemo: 'https://voice-counter-app.vercel.app',
       },
     },
-
     {
       id: 'proj-08',
       title: 'Neumorphic Calculator',
@@ -520,8 +409,7 @@ export const projects: Projects = {
         name: 'Utility',
         slug: 'utility',
       },
-      image:
-        'https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=1000',
+      image: NeumorphicCalculator,
       description:
         'A clean calculator interface inspired by neumorphic design principles with responsive layouts and interactive controls.',
       techStack: [
@@ -545,72 +433,22 @@ export const projects: Projects = {
         },
       ],
       links: {
-        github: 'https://github.com/Hary300',
-        liveDemo: 'https://neumorphic-calculator.vercel.app',
+        github:
+          'https://github.com/Hary300/Personal-Project-08-Neumorphic-Calculator',
+        liveDemo: 'https://neumorphic-soft-ui-calculator.vercel.app/',
       },
     },
-
     {
-      id: 'proj-09',
-      title: 'Interactive Rating Component',
+      id: 'proj-12',
+      title: 'Todo Management API (Backend)',
       category: {
-        name: 'UI Component',
-        slug: 'ui-component',
+        name: 'Web App',
+        slug: 'web-app',
       },
-      image:
-        'https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1000',
+      image: TodoListApi,
       description:
-        'A compact interactive rating component designed to provide users with a simple and intuitive feedback experience.',
+        'RESTful API service for task management, supporting authentication, CRUD operations, and database persistence.',
       techStack: [
-        {
-          name: 'React',
-          bgColor: 'bg-sky-100 dark:bg-sky-950/60',
-          textColor: 'text-sky-800 dark:text-sky-300',
-          icon: FaReact,
-        },
-        {
-          name: 'TypeScript',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: SiTypescript,
-        },
-        {
-          name: 'Tailwind CSS',
-          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
-          textColor: 'text-teal-800 dark:text-teal-300',
-          icon: RiTailwindCssFill,
-        },
-      ],
-      links: {
-        github: 'https://github.com/Hary300',
-        liveDemo: 'https://interactive-rating-component.vercel.app',
-      },
-    },
-
-    {
-      id: 'proj-10',
-      title: 'Contact Form API',
-      category: {
-        name: 'Utility',
-        slug: 'utility',
-      },
-      image:
-        'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1000',
-      description:
-        'A contact form project demonstrating form validation, API integration, error handling, and secure backend communication.',
-      techStack: [
-        {
-          name: 'React',
-          bgColor: 'bg-sky-100 dark:bg-sky-950/60',
-          textColor: 'text-sky-800 dark:text-sky-300',
-          icon: FaReact,
-        },
-        {
-          name: 'Node.js',
-          bgColor: 'bg-emerald-100 dark:bg-emerald-950/60',
-          textColor: 'text-emerald-800 dark:text-emerald-300',
-          icon: FaNodeJs,
-        },
         {
           name: 'Express',
           bgColor: 'bg-zinc-200 dark:bg-zinc-800/80',
@@ -618,28 +456,41 @@ export const projects: Projects = {
           icon: SiExpress,
         },
         {
-          name: 'Zod',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: SiZod,
+          name: 'MongoDB',
+          bgColor: 'bg-emerald-100 dark:bg-emerald-950/60',
+          textColor: 'text-emerald-800 dark:text-emerald-300',
+          icon: SiMongodb,
+        },
+        {
+          name: 'Mongoose',
+          bgColor: 'bg-red-100 dark:bg-red-950/60',
+          textColor: 'text-red-800 dark:text-red-300',
+          icon: SiMongoose,
+        },
+        {
+          name: 'Node.js',
+          bgColor: 'bg-green-100 dark:bg-green-950/60',
+          textColor: 'text-green-800 dark:text-green-300',
+          icon: FaNodeJs,
         },
       ],
       links: {
-        github: 'https://github.com/Hary300',
-        liveDemo: 'https://contact-form-api.vercel.app',
+        github:
+          'https://github.com/Hary300/personal-Project-25-todo-app-backend',
+        liveDemo:
+          'https://personal-project-25-todo-app-backend-production.up.railway.app/api-docs/',
       },
     },
     {
-      id: 'proj-11',
+      id: 'proj-14',
+      title: 'Modern Company Profile',
       category: {
-        name: 'Game',
-        slug: 'game',
+        name: 'Landing Page',
+        slug: 'landing-page',
       },
-      title: 'Neon Snake',
-      image:
-        'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000',
+      image: CompanyProfile,
       description:
-        'A classic snake game redesigned with a modern neon interface, smooth controls, increasing difficulty, and a persistent high score.',
+        'A responsive website showcasing services, portfolio, client testimonials, and an interactive contact form.',
       techStack: [
         {
           name: 'React',
@@ -654,15 +505,22 @@ export const projects: Projects = {
           icon: SiTypescript,
         },
         {
-          name: 'Tailwind CSS',
-          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
-          textColor: 'text-teal-800 dark:text-teal-300',
-          icon: RiTailwindCssFill,
+          name: 'React Hook Form',
+          bgColor: 'bg-pink-100 dark:bg-pink-950/60',
+          textColor: 'text-pink-800 dark:text-pink-300',
+          icon: SiReacthookform,
+        },
+        {
+          name: 'Zod',
+          bgColor: 'bg-indigo-100 dark:bg-indigo-950/60',
+          textColor: 'text-indigo-800 dark:text-indigo-300',
+          icon: SiZod,
         },
       ],
       links: {
-        github: 'https://github.com/Hary300/neon-snake',
-        liveDemo: 'https://neon-snake.vercel.app',
+        github:
+          'https://github.com/Hary300/Personal-Project-27-Company-Profile',
+        liveDemo: 'https://personal-project-27-company-profile.vercel.app/',
       },
     },
   ],

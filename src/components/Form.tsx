@@ -70,7 +70,7 @@ const Form = () => {
       <Button
         type='submit'
         disabled={isSubmitting}
-        className='bg-portfolio-green text-portfolio-white'
+        className='bg-portfolio-green text-portfolio-white h-10'
       >
         {isSubmitting
           ? contactData.form.loadingButtonText

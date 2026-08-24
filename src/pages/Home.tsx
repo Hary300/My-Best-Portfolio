@@ -13,7 +13,7 @@ const Home = () => {
   const isDark = themeStore((state) => state.isDark);
   return (
     <Container title='Home'>
-      <div className='flex justify-between flex-col md:flex-row items-center gap-4'>
+      <div className='flex justify-between flex-col md:flex-row items-center gap-2'>
         <div className='flex flex-col gap-2 sm:gap-3 xl:gap-6 flex-1 sm:flex-2'>
           <p className='text-xl sm:text-3xl font-bold xl:text-5xl'>
             Hi, I'm Hary
@@ -41,7 +41,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className='flex-1 md:min-w-70 lg:max-w-150 '>
+        <div className='flex-1 md:min-w-60 lg:max-w-150 '>
           <img src={isDark ? darkHeroImage : lightHeroImage} alt='hero image' />
         </div>
       </div>

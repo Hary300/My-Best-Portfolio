@@ -88,20 +88,25 @@ const Projects = () => {
   };
   return (
     <Container title='Projects' className='pb-25'>
-      <div className='flex flex-wrap gap-2'>
+      <div className='flex flex-wrap items-center gap-2'>
         {tabs.map((tab) => {
+          const isActive = activeTab === tab.slug;
           return (
             <Button
               key={tab.id}
-              variant='outline'
-              className={cn(
-                'border-portfolio-green',
-                tab.slug === activeTab &&
-                  'bg-portfolio-green-soft dark:bg-portfolio-green'
-              )}
               onClick={() => handleClickTab(tab.slug)}
+              disabled={projects.total[tab.countKey] === 0}
+              className={cn(
+                'px-3.5 py-1.5 text-sm font-medium rounded-full transition-colors',
+                isActive
+                  ? 'bg-emerald-700 text-white'
+                  : 'bg-emerald-900/5 text-emerald-900/80 hover:bg-emerald-900/10 dark:bg-emerald-950/30 dark:text-emerald-200'
+              )}
             >
-              {tab.name} ({projects.total[tab.countKey]})
+              {tab.name}
+              <span className='ml-1 text-xs opacity-60'>
+                ({projects.total[tab.countKey]})
+              </span>
             </Button>
           );
         })}

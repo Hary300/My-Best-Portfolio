@@ -1,13 +1,14 @@
 import { contactData } from '@/data/contact';
-// import { themeStore } from '@/store/themeStore';
+import { themeStore } from '@/store/themeStore';
+import darkContact from '@/assets/images/dark-contact.webp';
 
 const ContactHeader = () => {
-  // const isDark = themeStore((state) => state.isDark);
+  const isDark = themeStore((state) => state.isDark);
   const data = contactData.header;
   return (
     <section
       id='contact-header'
-      className='flex justify-between flex-col xl:flex-row xl:items-center gap-4'
+      className='flex justify-between  flex-row items-center'
     >
       <div className='flex flex-col gap-2 sm:gap-3 xl:gap-6 flex-[50%]'>
         <p className='text-xl sm:text-3xl font-bold xl:text-5xl'>
@@ -17,13 +18,12 @@ const ContactHeader = () => {
         <div className='flex flex-col gap-2 max-w-95'>{data.description}</div>
       </div>
 
-      <div className='flex-[50%] w-full max-w-200'>
-        {/* <img
-          src={isDark ? darkAboutMe : lightAboutMe}
-          alt='about me image'
-          className='brightness-90 w-full'
-        /> */}
-        <div className='h-70 w-full bg-zinc-600' />
+      <div className='flex-[50%] w-full max-w-80 lg:max-w-150 '>
+        <img
+          src={isDark ? darkContact : ''}
+          alt='Contact me image'
+          className='w-full'
+        />
       </div>
     </section>
   );

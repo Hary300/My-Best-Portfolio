@@ -20,7 +20,7 @@ const ContactGetInTouch = () => {
             <div key={item.id} className='flex gap-4 items-center'>
               <Icon className='size-7 text-portfolio-green dark:text-emerald-300 dark:drop-shadow-glow-icon' />
               <div className='flex flex-col'>
-                <p className='text-sm font-semibold'>{item.label}</p>
+                <p className='font-semibold'>{item.label}</p>
                 <p className='text-xs'>{item.value}</p>
               </div>
             </div>
