@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <Container title='Contact' className='pb-25'>
       <ContactHeader />
-      <div className='flex flex-col lg:flex-row gap-4'>
+      <div className='flex flex-col lg:flex-row gap-4 '>
         <ContactForm />
         <ContactGetInTouch />
       </div>

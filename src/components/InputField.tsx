@@ -26,7 +26,7 @@ const InputField = <T extends FieldValues>({
       {isTextArea ? (
         <textarea
           id={name}
-          rows={5}
+          rows={3}
           className='w-full border bg-portfolio-green-soft dark:bg-portfolio-card rounded-md focus: outline-0 px-4 py-2 text-sm'
           {...register(name)}
         ></textarea>

@@ -8,6 +8,7 @@ import Projects from '@/pages/Projects';
 import Skills from '@/pages/Skills';
 import About from '@/pages/about/About';
 import Contact from '@/pages/contact/Contact';
+import { Toaster } from 'sonner';
 
 function App() {
   const [searchParams] = useSearchParams();
@@ -28,6 +29,20 @@ function App() {
       {activeTab === 'skills' && <Skills />}
       {activeTab === 'about' && <About />}
       {activeTab === 'contact' && <Contact />}
+      <Toaster
+        duration={3000}
+        position='top-center'
+        toastOptions={{
+          classNames: {
+            toast:
+              'dark:!bg-portfolio-dark-secondary !bg-portfolio-green-soft dark:!border-2 dark:!border-portfolio-card-secondary !bg-portfolio-green-soft dark:!bg-portfolio-dark-secondary',
+
+            success: '!text-portfolio-green dark:!text-portfolio-green',
+
+            error: '!text-red-600',
+          },
+        }}
+      />
     </div>
   );
 }

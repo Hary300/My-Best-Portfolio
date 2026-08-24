@@ -86,7 +86,7 @@ export const contactData: ContactSectionData = {
       {
         id: 'email',
         label: 'Email',
-        value: 'hary300.dev@gmail.com',
+        value: 'h.nugraha.p@gmail.com',
         icon: TbMail,
       },
       {

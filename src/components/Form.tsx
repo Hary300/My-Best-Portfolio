@@ -7,13 +7,14 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { Button } from './ui/button';
 import { contactData } from '@/data/contact';
 import InputField from './InputField';
+import { toast } from 'sonner';
 
 const Form = () => {
   const {
     register,
     handleSubmit,
     reset,
-    formState: { errors, isLoading },
+    formState: { errors, isSubmitting },
   } = useForm<ContactFormSchema>({
     defaultValues: {
       name: '',
@@ -24,9 +25,29 @@ const Form = () => {
     resolver: zodResolver(contactFormSchema),
   });
 
-  const onSubmit = (data: ContactFormSchema) => {
-    console.log(data);
-    reset();
+  const onSubmit = async (data: ContactFormSchema) => {
+    try {
+      const request = await fetch('https://formspree.io/f/xljrkyaa', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+      if (!request.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      reset();
+      toast.success('Message sent successfully');
+    } catch (error) {
+      if (error instanceof Error) {
+        toast.error(error.message);
+      } else {
+        toast.error('Something went wrong');
+      }
+    }
   };
 
   const fields = contactData.form.fields;
@@ -48,10 +69,10 @@ const Form = () => {
       })}
       <Button
         type='submit'
-        disabled={isLoading}
+        disabled={isSubmitting}
         className='bg-portfolio-green text-portfolio-white'
       >
-        {isLoading
+        {isSubmitting
           ? contactData.form.loadingButtonText
           : contactData.form.submitButtonText}
       </Button>
