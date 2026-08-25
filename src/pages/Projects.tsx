@@ -30,6 +30,7 @@ interface Tabs {
 
 const Projects = () => {
   const [searchParams, setSearchParams] = useSearchParams();
+
   const categoryQuery = searchParams.get('category');
   const activeTab = categoryQuery ? categoryQuery : 'all';
   const selectedProjects = categoryQuery
@@ -86,6 +87,7 @@ const Projects = () => {
     }
     setSearchParams(params);
   };
+
   return (
     <Container title='Projects' className='pb-25'>
       <div className='flex flex-wrap items-center gap-2'>
