@@ -21,6 +21,7 @@ import FaqAccordion from '@/assets/images/projects-ss/FaqAccordion.webp';
 import ContactFormAPI from '@/assets/images/projects-ss/ContactFormAPI.webp';
 import ContactUs from '@/assets/images/projects-ss/ContactUs.webp';
 import BluePortfolio from '@/assets/images/projects-ss/BluePorfolio.webp';
+import NewsletterSignUp from '@/assets/images/projects-ss/NewsLetterSignUp.webp';
 
 export const projects: Projects = {
   /** ==============
@@ -451,6 +452,23 @@ export const projects: Projects = {
       links: {
         github: 'https://github.com/Hary300/WPH-Project-11-Portfolio',
         liveDemo: 'https://portfolio1-teal-nine.vercel.app/',
+      },
+    },
+    {
+      id: 'proj-23',
+      title: 'Newsletter Sign-Up Form',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
+      image: NewsletterSignUp,
+      description:
+        'A responsive newsletter subscription card featuring email format validation and a success confirmation state.',
+      techStack: ['html', 'css', 'tailwind', 'javascript'],
+      links: {
+        github:
+          'https://github.com/Hary300/Frontendmentor-Project-09-Newsletter-Sign-Up-Form',
+        liveDemo: 'https://newsletter-sign-up-form-teal.vercel.app/',
       },
     },
   ],
