@@ -10,6 +10,7 @@ export type TechStackSlug =
   | 'nodejs'
   | 'express'
   | 'mongodb'
+  | 'mongoose'
   | 'shadcn'
   | 'framerMotion'
   | 'rhf'

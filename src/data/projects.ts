@@ -18,6 +18,9 @@ import TimeTracking from '@/assets/images/projects-ss/TimeTracking.webp';
 import TipCalculator from '@/assets/images/projects-ss/TipCalculator.webp';
 import RatingComponent from '@/assets/images/projects-ss/RatingComponent.webp';
 import FaqAccordion from '@/assets/images/projects-ss/FaqAccordion.webp';
+import ContactFormAPI from '@/assets/images/projects-ss/ContactFormAPI.webp';
+import ContactUs from '@/assets/images/projects-ss/ContactUs.webp';
+import BluePortfolio from '@/assets/images/projects-ss/BluePorfolio.webp';
 
 export const projects: Projects = {
   /** ==============
@@ -217,10 +220,10 @@ export const projects: Projects = {
     },
     {
       id: 'proj-09',
-      title: 'Todo Management API (Backend)',
+      title: 'Todo Management API',
       category: {
-        name: 'Web App',
-        slug: 'web-app',
+        name: 'Utility',
+        slug: 'utility',
       },
       image: TodoListApi,
       description:
@@ -397,6 +400,57 @@ export const projects: Projects = {
         github:
           'https://github.com/Hary300/Frontendmentor-Project-13-FAQ-Accordion',
         liveDemo: 'https://frontendmentor-project-13-faq-accor.vercel.app/',
+      },
+    },
+    {
+      id: 'proj-20',
+      title: 'Contact Form API',
+      category: {
+        name: 'Utility',
+        slug: 'utility',
+      },
+      image: ContactFormAPI,
+      description:
+        'A RESTful backend service built to handle contact form submissions, message storage, and Swagger API documentation.',
+      techStack: ['javascript', 'express', 'mongodb', 'mongoose'],
+      links: {
+        github:
+          'https://github.com/Hary300/Personal-Project-23-contact-Message-Backend',
+        liveDemo:
+          'https://personal-project-23-contact-message-backend-production.up.railway.app/api-docs',
+      },
+    },
+    {
+      id: 'proj-21',
+      title: 'Contact Us Component',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
+      image: ContactUs,
+      description:
+        'An interactive contact form component featuring custom form validation, field focus states, and a success toast notification.',
+      techStack: ['html', 'css', 'tailwind', 'javascript'],
+      links: {
+        github:
+          'https://github.com/Hary300/Frontendmentor-Project-14-Contact-Form',
+        liveDemo: 'https://frontendmentor-project-14-contact-f.vercel.app/',
+      },
+    },
+    {
+      id: 'proj-22',
+      title: 'Blue Portfolio',
+      category: {
+        name: 'Landing Page',
+        slug: 'landing-page',
+      },
+      image: BluePortfolio,
+      description:
+        'A modern and responsive personal portfolio built with Next.js and Tailwind CSS, featuring smooth animations powered by Framer Motion.',
+      techStack: ['nextjs', 'typescript', 'tailwind', 'framerMotion'],
+      links: {
+        github: 'https://github.com/Hary300/WPH-Project-11-Portfolio',
+        liveDemo: 'https://portfolio1-teal-nine.vercel.app/',
       },
     },
   ],

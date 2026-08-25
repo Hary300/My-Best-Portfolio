@@ -8,6 +8,7 @@ import {
   SiExpress,
   SiFramer,
   SiMongodb,
+  SiMongoose,
   SiReacthookform,
   SiReactquery,
   SiShadcnui,
@@ -88,6 +89,12 @@ export const techStacks: Record<TechStackSlug, TechStackItem> = {
     bgColor: 'bg-emerald-100 dark:bg-emerald-950/60',
     textColor: 'text-emerald-800 dark:text-emerald-300',
     icon: SiMongodb,
+  },
+  mongoose: {
+    name: 'Mongoose',
+    bgColor: 'bg-red-100 dark:bg-red-950/60',
+    textColor: 'text-red-800 dark:text-red-300',
+    icon: SiMongoose,
   },
   nodejs: {
     name: 'Node.js',
