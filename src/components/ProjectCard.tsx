@@ -1,12 +1,15 @@
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
 import type { Project } from '@/types/projects';
+import { techStacks } from './../config/tech-stack';
+import { TbApi } from 'react-icons/tb';
 
 interface ProjectCardProps {
   project: Project;
 }
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
+  const service = project.service;
   return (
     <div className='rounded-2xl flex flex-col gap-6 p-4 border-2 shadow-subtle dark:shadow-green'>
       <div className='relative rounded-2xl overflow-hidden h-50'>
@@ -23,21 +26,32 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       <p className='text-zinc-500'>{project.description}</p>
       <div className='flex gap-2 flex-wrap'>
         {project.techStack.map((item) => {
-          const Icon = item.icon;
+          const stack = techStacks[item];
+          const Icon = stack.icon;
           return (
             <div
-              key={item.name}
+              key={stack.name}
               className={cn(
                 'rounded-md p-2 flex items-center gap-1',
-                item.bgColor,
-                item.textColor
+                stack.bgColor,
+                stack.textColor
               )}
             >
               {Icon && <Icon />}
-              <span>{item.name}</span>
+              <span>{stack.name}</span>
             </div>
           );
         })}
+        {service && (
+          <div
+            className={cn(
+              'rounded-md p-2 flex items-center gap-1 bg-indigo-100 dark:bg-indigo-950/60 text-indigo-800 dark:text-indigo-300'
+            )}
+          >
+            <TbApi />
+            <span>{service}</span>
+          </div>
+        )}
       </div>
       <div className='flex gap-4'>
         <a

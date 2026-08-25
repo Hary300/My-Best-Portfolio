@@ -1,11 +1,20 @@
-import type { IconType } from 'react-icons/lib';
-
-interface TechStack {
-  name: string;
-  bgColor: string;
-  textColor: string;
-  icon: IconType;
-}
+export type TechStackSlug =
+  | 'html'
+  | 'css'
+  | 'tailwind'
+  | 'javascript'
+  | 'typescript'
+  | 'reactQuery'
+  | 'react'
+  | 'nextjs'
+  | 'nodejs'
+  | 'express'
+  | 'mongodb'
+  | 'shadcn'
+  | 'framerMotion'
+  | 'rhf'
+  | 'axios'
+  | 'zod';
 
 export type Categories =
   | 'Web App'
@@ -32,7 +41,8 @@ export interface Project {
   title: string;
   image: string;
   description: string;
-  techStack: TechStack[];
+  techStack: TechStackSlug[];
+  service?: string;
   links: {
     github: string;
     liveDemo: string;

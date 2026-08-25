@@ -1,23 +1,3 @@
-import { FaNodeJs } from 'react-icons/fa';
-import { FaReact } from 'react-icons/fa';
-import {
-  SiAxios,
-  SiMongoose,
-  SiReacthookform,
-  SiShadcnui,
-  SiTypescript,
-} from 'react-icons/si';
-import { TbApi } from 'react-icons/tb';
-import { RiNextjsFill } from 'react-icons/ri';
-import { SiMongodb } from 'react-icons/si';
-import { SiFramer } from 'react-icons/si';
-import { RiTailwindCssFill } from 'react-icons/ri';
-import { SiExpress } from 'react-icons/si';
-import { SiReactquery } from 'react-icons/si';
-import { SiZod } from 'react-icons/si';
-import { BsJavascript } from 'react-icons/bs';
-import { FaCss3Alt } from 'react-icons/fa';
-import { FaHtml5 } from 'react-icons/fa6';
 import type { Projects, Total } from '@/types/projects';
 import LibraryApp from '@/assets/images/projects-ss/LibraryApp.webp';
 import RestaurantApp from '@/assets/images/projects-ss/RestaurantApp.webp';
@@ -54,32 +34,7 @@ export const projects: Projects = {
       image: LibraryApp,
       description:
         'A library platform for discovering books, managing borrowing, and handling user accounts with role-based access.',
-      techStack: [
-        {
-          name: 'Next.js',
-          bgColor: 'bg-zinc-200 dark:bg-zinc-800/80',
-          textColor: 'text-zinc-800 dark:text-zinc-300',
-          icon: RiNextjsFill,
-        },
-        {
-          name: 'TypeScript',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: SiTypescript,
-        },
-        {
-          name: 'React Query',
-          bgColor: 'bg-rose-100 dark:bg-rose-950/60',
-          textColor: 'text-rose-800 dark:text-rose-300',
-          icon: SiReactquery,
-        },
-        {
-          name: 'Tailwind CSS',
-          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
-          textColor: 'text-teal-800 dark:text-teal-300',
-          icon: RiTailwindCssFill,
-        },
-      ],
+      techStack: ['nextjs', 'typescript', 'reactQuery', 'tailwind'],
       links: {
         github: 'https://github.com/Hary300/Personal-Project-31-Library-App',
         liveDemo: 'https://personal-project-31-library-app.vercel.app',
@@ -96,32 +51,7 @@ export const projects: Projects = {
       image: RestaurantApp,
       description:
         'A food ordering interface where users can browse meals, manage their cart, and review their selected orders.',
-      techStack: [
-        {
-          name: 'Next.js',
-          bgColor: 'bg-zinc-200 dark:bg-zinc-800/80',
-          textColor: 'text-zinc-800 dark:text-zinc-300',
-          icon: RiNextjsFill,
-        },
-        {
-          name: 'TypeScript',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: SiTypescript,
-        },
-        {
-          name: 'React Query',
-          bgColor: 'bg-rose-100 dark:bg-rose-950/60',
-          textColor: 'text-rose-800 dark:text-rose-300',
-          icon: SiReactquery,
-        },
-        {
-          name: 'Tailwind CSS',
-          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
-          textColor: 'text-teal-800 dark:text-teal-300',
-          icon: RiTailwindCssFill,
-        },
-      ],
+      techStack: ['nextjs', 'typescript', 'reactQuery', 'tailwind'],
       links: {
         github: 'https://github.com/Hary300/Personal-Project-29-Meal-Order-App',
         liveDemo: 'https://personal-project-29-meal-order-app.vercel.app/',
@@ -138,32 +68,8 @@ export const projects: Projects = {
       image: MovieDB,
       description:
         'A movie discovery platform where users can search, explore movies, view movie details, and save their favorite content.',
-      techStack: [
-        {
-          name: 'React',
-          bgColor: 'bg-sky-100 dark:bg-sky-950/60',
-          textColor: 'text-sky-800 dark:text-sky-300',
-          icon: FaReact,
-        },
-        {
-          name: 'TypeScript',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: SiTypescript,
-        },
-        {
-          name: 'React Query',
-          bgColor: 'bg-rose-100 dark:bg-rose-950/60',
-          textColor: 'text-rose-800 dark:text-rose-300',
-          icon: SiReactquery,
-        },
-        {
-          name: 'TMDB API',
-          bgColor: 'bg-indigo-100 dark:bg-indigo-950/60',
-          textColor: 'text-indigo-800 dark:text-indigo-300',
-          icon: TbApi,
-        },
-      ],
+      techStack: ['react', 'typescript', 'reactQuery', 'tailwind'],
+      service: 'TMDB API',
       links: {
         github: 'https://github.com/Hary300/Personal-Project-28-Movie-DB-App',
         liveDemo: 'https://personal-project-28-movie-db-app.vercel.app/',
@@ -185,32 +91,7 @@ export const projects: Projects = {
       image: LibraryApp,
       description:
         'A library platform for discovering books, managing borrowing, and handling user accounts with role-based access.',
-      techStack: [
-        {
-          name: 'Next.js',
-          bgColor: 'bg-zinc-200 dark:bg-zinc-800/80',
-          textColor: 'text-zinc-800 dark:text-zinc-300',
-          icon: RiNextjsFill,
-        },
-        {
-          name: 'TypeScript',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: SiTypescript,
-        },
-        {
-          name: 'React Query',
-          bgColor: 'bg-rose-100 dark:bg-rose-950/60',
-          textColor: 'text-rose-800 dark:text-rose-300',
-          icon: SiReactquery,
-        },
-        {
-          name: 'Tailwind CSS',
-          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
-          textColor: 'text-teal-800 dark:text-teal-300',
-          icon: RiTailwindCssFill,
-        },
-      ],
+      techStack: ['nextjs', 'typescript', 'reactQuery', 'tailwind'],
       links: {
         github: 'https://github.com/Hary300/Personal-Project-31-Library-App',
         liveDemo: 'https://personal-project-31-library-app.vercel.app',
@@ -226,32 +107,7 @@ export const projects: Projects = {
       image: TodoListApp,
       description:
         'A productivity application for organizing daily tasks, priorities, schedules, and completed activities.',
-      techStack: [
-        {
-          name: 'React',
-          bgColor: 'bg-sky-100 dark:bg-sky-950/60',
-          textColor: 'text-sky-800 dark:text-sky-300',
-          icon: FaReact,
-        },
-        {
-          name: 'TypeScript',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: SiTypescript,
-        },
-        {
-          name: 'React Query',
-          bgColor: 'bg-rose-100 dark:bg-rose-950/60',
-          textColor: 'text-rose-800 dark:text-rose-300',
-          icon: SiReactquery,
-        },
-        {
-          name: 'Tailwind CSS',
-          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
-          textColor: 'text-teal-800 dark:text-teal-300',
-          icon: RiTailwindCssFill,
-        },
-      ],
+      techStack: ['react', 'typescript', 'reactQuery', 'tailwind'],
       links: {
         github:
           'https://github.com/Hary300/personal-Project-26-todo-app-frontend',
@@ -268,32 +124,7 @@ export const projects: Projects = {
       image: MovieDB,
       description:
         'A movie discovery platform where users can search, explore movies, view movie details, and save their favorite content.',
-      techStack: [
-        {
-          name: 'React',
-          bgColor: 'bg-sky-100 dark:bg-sky-950/60',
-          textColor: 'text-sky-800 dark:text-sky-300',
-          icon: FaReact,
-        },
-        {
-          name: 'TypeScript',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: SiTypescript,
-        },
-        {
-          name: 'Framer Motion',
-          bgColor: 'bg-purple-100 dark:bg-purple-950/60',
-          textColor: 'text-purple-800 dark:text-purple-300',
-          icon: SiFramer,
-        },
-        {
-          name: 'TMDB API',
-          bgColor: 'bg-indigo-100 dark:bg-indigo-950/60',
-          textColor: 'text-indigo-800 dark:text-indigo-300',
-          icon: TbApi,
-        },
-      ],
+      techStack: ['react', 'typescript', 'reactQuery', 'framerMotion'],
       links: {
         github: 'https://github.com/Hary300/Personal-Project-28-Movie-DB-App',
         liveDemo: 'https://personal-project-28-movie-db-app.vercel.app/',
@@ -309,26 +140,7 @@ export const projects: Projects = {
       image: ItachiLandingPage,
       description:
         'A visually focused anime-inspired landing page with responsive layouts, animations, and interactive content sections.',
-      techStack: [
-        {
-          name: 'HTML',
-          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
-          textColor: 'text-orange-800 dark:text-orange-300',
-          icon: FaHtml5,
-        },
-        {
-          name: 'CSS',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: FaCss3Alt,
-        },
-        {
-          name: 'JavaScript',
-          bgColor: 'bg-amber-100 dark:bg-amber-950/60',
-          textColor: 'text-amber-800 dark:text-amber-300',
-          icon: BsJavascript,
-        },
-      ],
+      techStack: ['html', 'css', 'javascript'],
       links: {
         github:
           'https://github.com/Hary300/WPH-REP-Project-01-Itachi-landing-page',
@@ -345,32 +157,8 @@ export const projects: Projects = {
       image: SimpleTodoList,
       description:
         'A clean and lightweight task manager application for creating, tracking, and managing daily tasks using REST API integrations.',
-      techStack: [
-        {
-          name: 'HTML5',
-          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
-          textColor: 'text-orange-800 dark:text-orange-300',
-          icon: FaHtml5,
-        },
-        {
-          name: 'CSS3',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: FaCss3Alt,
-        },
-        {
-          name: 'JavaScript',
-          bgColor: 'bg-amber-100 dark:bg-amber-950/60',
-          textColor: 'text-amber-800 dark:text-amber-300',
-          icon: BsJavascript,
-        },
-        {
-          name: 'REST API',
-          bgColor: 'bg-emerald-100 dark:bg-emerald-950/60',
-          textColor: 'text-emerald-800 dark:text-emerald-300',
-          icon: TbApi,
-        },
-      ],
+      techStack: ['html', 'css', 'javascript'],
+      service: 'REST API',
       links: {
         github: 'https://github.com/Hary300/WPH-REP-Project-05-ToDo-List',
         liveDemo: 'https://wph-rep-project-05-to-do-list.vercel.app/',
@@ -386,32 +174,7 @@ export const projects: Projects = {
       image: RestaurantApp,
       description:
         'A food ordering interface where users can browse meals, manage their cart, and review their selected orders.',
-      techStack: [
-        {
-          name: 'Next.js',
-          bgColor: 'bg-zinc-200 dark:bg-zinc-800/80',
-          textColor: 'text-zinc-800 dark:text-zinc-300',
-          icon: RiNextjsFill,
-        },
-        {
-          name: 'TypeScript',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: SiTypescript,
-        },
-        {
-          name: 'React Query',
-          bgColor: 'bg-rose-100 dark:bg-rose-950/60',
-          textColor: 'text-rose-800 dark:text-rose-300',
-          icon: SiReactquery,
-        },
-        {
-          name: 'Tailwind CSS',
-          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
-          textColor: 'text-teal-800 dark:text-teal-300',
-          icon: RiTailwindCssFill,
-        },
-      ],
+      techStack: ['nextjs', 'typescript', 'reactQuery', 'tailwind'],
       links: {
         github: 'https://github.com/Hary300/Personal-Project-29-Meal-Order-App',
         liveDemo: 'https://personal-project-29-meal-order-app.vercel.app/',
@@ -427,32 +190,8 @@ export const projects: Projects = {
       image: VoiceCounter,
       description:
         'An experimental web application that uses voice interaction to control and update a simple counter.',
-      techStack: [
-        {
-          name: 'HTML',
-          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
-          textColor: 'text-orange-800 dark:text-orange-300',
-          icon: FaHtml5,
-        },
-        {
-          name: 'JavaScript',
-          bgColor: 'bg-amber-100 dark:bg-amber-950/60',
-          textColor: 'text-amber-800 dark:text-amber-300',
-          icon: BsJavascript,
-        },
-        {
-          name: 'Web Speech API',
-          bgColor: 'bg-indigo-100 dark:bg-indigo-950/60',
-          textColor: 'text-indigo-800 dark:text-indigo-300',
-          icon: TbApi,
-        },
-        {
-          name: 'CSS',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: FaCss3Alt,
-        },
-      ],
+      techStack: ['html', 'css', 'javascript'],
+      service: 'Web Speech API',
       links: {
         github:
           'https://github.com/Hary300/Personal-Project-06-Voice-Counter-App',
@@ -469,26 +208,7 @@ export const projects: Projects = {
       image: NeumorphicCalculator,
       description:
         'A clean calculator interface inspired by neumorphic design principles with responsive layouts and interactive controls.',
-      techStack: [
-        {
-          name: 'HTML',
-          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
-          textColor: 'text-orange-800 dark:text-orange-300',
-          icon: FaHtml5,
-        },
-        {
-          name: 'CSS',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: FaCss3Alt,
-        },
-        {
-          name: 'JavaScript',
-          bgColor: 'bg-amber-100 dark:bg-amber-950/60',
-          textColor: 'text-amber-800 dark:text-amber-300',
-          icon: BsJavascript,
-        },
-      ],
+      techStack: ['html', 'css', 'javascript'],
       links: {
         github:
           'https://github.com/Hary300/Personal-Project-08-Neumorphic-Calculator',
@@ -505,32 +225,7 @@ export const projects: Projects = {
       image: TodoListApi,
       description:
         'RESTful API service for task management, supporting authentication, CRUD operations, and database persistence.',
-      techStack: [
-        {
-          name: 'Express',
-          bgColor: 'bg-zinc-200 dark:bg-zinc-800/80',
-          textColor: 'text-zinc-800 dark:text-zinc-300',
-          icon: SiExpress,
-        },
-        {
-          name: 'MongoDB',
-          bgColor: 'bg-emerald-100 dark:bg-emerald-950/60',
-          textColor: 'text-emerald-800 dark:text-emerald-300',
-          icon: SiMongodb,
-        },
-        {
-          name: 'Mongoose',
-          bgColor: 'bg-red-100 dark:bg-red-950/60',
-          textColor: 'text-red-800 dark:text-red-300',
-          icon: SiMongoose,
-        },
-        {
-          name: 'Node.js',
-          bgColor: 'bg-green-100 dark:bg-green-950/60',
-          textColor: 'text-green-800 dark:text-green-300',
-          icon: FaNodeJs,
-        },
-      ],
+      techStack: ['express', 'typescript', 'mongodb', 'nodejs'],
       links: {
         github:
           'https://github.com/Hary300/personal-Project-25-todo-app-backend',
@@ -548,32 +243,7 @@ export const projects: Projects = {
       image: CompanyProfile,
       description:
         'A responsive website showcasing services, portfolio, client testimonials, and an interactive contact form.',
-      techStack: [
-        {
-          name: 'React',
-          bgColor: 'bg-sky-100 dark:bg-sky-950/60',
-          textColor: 'text-sky-800 dark:text-sky-300',
-          icon: FaReact,
-        },
-        {
-          name: 'TypeScript',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: SiTypescript,
-        },
-        {
-          name: 'React Hook Form',
-          bgColor: 'bg-pink-100 dark:bg-pink-950/60',
-          textColor: 'text-pink-800 dark:text-pink-300',
-          icon: SiReacthookform,
-        },
-        {
-          name: 'Zod',
-          bgColor: 'bg-indigo-100 dark:bg-indigo-950/60',
-          textColor: 'text-indigo-800 dark:text-indigo-300',
-          icon: SiZod,
-        },
-      ],
+      techStack: ['react', 'typescript', 'rhf', 'zod'],
       links: {
         github:
           'https://github.com/Hary300/Personal-Project-27-Company-Profile',
@@ -590,32 +260,7 @@ export const projects: Projects = {
       image: GreenPortfolio,
       description:
         'A modern, eco-themed interactive portfolio built with seamless animations, dark style, and sleek UI components.',
-      techStack: [
-        {
-          name: 'Next.js',
-          bgColor: 'bg-zinc-200 dark:bg-zinc-800/80',
-          textColor: 'text-zinc-800 dark:text-zinc-300',
-          icon: RiNextjsFill,
-        },
-        {
-          name: 'TypeScript',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: SiTypescript,
-        },
-        {
-          name: 'Framer Motion',
-          bgColor: 'bg-purple-100 dark:bg-purple-950/60',
-          textColor: 'text-purple-800 dark:text-purple-300',
-          icon: SiFramer,
-        },
-        {
-          name: 'Shadcn UI',
-          bgColor: 'bg-slate-200 dark:bg-slate-800/80',
-          textColor: 'text-slate-800 dark:text-slate-300',
-          icon: SiShadcnui,
-        },
-      ],
+      techStack: ['nextjs', 'typescript', 'framerMotion', 'shadcn'],
       links: {
         github: 'https://github.com/Hary300/My-Portfolio',
         liveDemo: 'https://my-portfolio-black-alpha-51.vercel.app/',
@@ -631,32 +276,7 @@ export const projects: Projects = {
       image: ElementDb,
       description:
         'An interactive periodic table for exploring chemical elements, properties, and trends with fast data fetching.',
-      techStack: [
-        {
-          name: 'Next.js',
-          bgColor: 'bg-zinc-200 dark:bg-zinc-800/80',
-          textColor: 'text-zinc-800 dark:text-zinc-300',
-          icon: RiNextjsFill,
-        },
-        {
-          name: 'TypeScript',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: SiTypescript,
-        },
-        {
-          name: 'Framer Motion',
-          bgColor: 'bg-purple-100 dark:bg-purple-950/60',
-          textColor: 'text-purple-800 dark:text-purple-300',
-          icon: SiFramer,
-        },
-        {
-          name: 'React Query',
-          bgColor: 'bg-rose-100 dark:bg-rose-950/60',
-          textColor: 'text-rose-800 dark:text-rose-300',
-          icon: SiReactquery,
-        },
-      ],
+      techStack: ['nextjs', 'typescript', 'framerMotion', 'reactQuery'],
       links: {
         github: 'https://github.com/Hary300/Personal-Project-30-Chemistry-DB',
         liveDemo: 'https://personal-project-30-chemistry-db-sand.vercel.app/',
@@ -672,32 +292,7 @@ export const projects: Projects = {
       image: MyPortfolio,
       description:
         'A personal portfolio website featuring interactive sections, smooth navigation, and a fully validated contact form.',
-      techStack: [
-        {
-          name: 'React',
-          bgColor: 'bg-sky-100 dark:bg-sky-950/60',
-          textColor: 'text-sky-800 dark:text-sky-300',
-          icon: FaReact,
-        },
-        {
-          name: 'TypeScript',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: SiTypescript,
-        },
-        {
-          name: 'React Hook Form',
-          bgColor: 'bg-pink-100 dark:bg-pink-950/60',
-          textColor: 'text-pink-800 dark:text-pink-300',
-          icon: SiReacthookform,
-        },
-        {
-          name: 'Zod',
-          bgColor: 'bg-indigo-100 dark:bg-indigo-950/60',
-          textColor: 'text-indigo-800 dark:text-indigo-300',
-          icon: SiZod,
-        },
-      ],
+      techStack: ['react', 'typescript', 'rhf', 'zod'],
       links: {
         github: 'https://github.com/Hary300/My-Best-Portfolio',
         liveDemo: 'https://my-best-portfolio-three.vercel.app/',
@@ -713,32 +308,7 @@ export const projects: Projects = {
       image: SimplePortfolio,
       description:
         'A portfolio landing page designed with Tailwind CSS for clean layout structure and smooth responsiveness.',
-      techStack: [
-        {
-          name: 'HTML5',
-          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
-          textColor: 'text-orange-800 dark:text-orange-300',
-          icon: FaHtml5,
-        },
-        {
-          name: 'CSS3',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: FaCss3Alt,
-        },
-        {
-          name: 'Tailwind CSS',
-          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
-          textColor: 'text-teal-800 dark:text-teal-300',
-          icon: RiTailwindCssFill,
-        },
-        {
-          name: 'JavaScript',
-          bgColor: 'bg-amber-100 dark:bg-amber-950/60',
-          textColor: 'text-amber-800 dark:text-amber-300',
-          icon: BsJavascript,
-        },
-      ],
+      techStack: ['html', 'css', 'tailwind', 'javascript'],
       links: {
         github:
           'https://github.com/Hary300/WPH-Project-15-Simple-Portfolio-Tailwinds',
@@ -755,20 +325,7 @@ export const projects: Projects = {
       image: SharinganEyes,
       description:
         'An interactive anime-inspired Sharingan eye visual crafted purely using CSS keyframe animations and structural HTML layout.',
-      techStack: [
-        {
-          name: 'HTML5',
-          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
-          textColor: 'text-orange-800 dark:text-orange-300',
-          icon: FaHtml5,
-        },
-        {
-          name: 'CSS3',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: FaCss3Alt,
-        },
-      ],
+      techStack: ['html', 'css'],
       links: {
         github: 'https://github.com/Hary300/Personal-Project-05-Sharingan',
         liveDemo: 'https://sharingan-hary300.vercel.app/',
@@ -784,32 +341,7 @@ export const projects: Projects = {
       image: TimeTracking,
       description:
         'A frontend mentor challenge app to track daily, weekly, and monthly activity hours fetched dynamically via Axios.',
-      techStack: [
-        {
-          name: 'HTML5',
-          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
-          textColor: 'text-orange-800 dark:text-orange-300',
-          icon: FaHtml5,
-        },
-        {
-          name: 'Tailwind CSS',
-          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
-          textColor: 'text-teal-800 dark:text-teal-300',
-          icon: RiTailwindCssFill,
-        },
-        {
-          name: 'JavaScript',
-          bgColor: 'bg-amber-100 dark:bg-amber-950/60',
-          textColor: 'text-amber-800 dark:text-amber-300',
-          icon: BsJavascript,
-        },
-        {
-          name: 'Axios',
-          bgColor: 'bg-purple-100 dark:bg-purple-950/60',
-          textColor: 'text-purple-800 dark:text-purple-300',
-          icon: SiAxios,
-        },
-      ],
+      techStack: ['html', 'tailwind', 'javascript', 'axios'],
       links: {
         github:
           'https://github.com/Hary300/Frontendmentor-Project-10-Time-Tracking-Dashboard',
@@ -826,32 +358,7 @@ export const projects: Projects = {
       image: TipCalculator,
       description:
         'A handy bill splitter and tip calculator built for dynamic percentage selection, custom tip input, and per-person cost calculations.',
-      techStack: [
-        {
-          name: 'HTML5',
-          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
-          textColor: 'text-orange-800 dark:text-orange-300',
-          icon: FaHtml5,
-        },
-        {
-          name: 'CSS3',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: FaCss3Alt,
-        },
-        {
-          name: 'Tailwind CSS',
-          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
-          textColor: 'text-teal-800 dark:text-teal-300',
-          icon: RiTailwindCssFill,
-        },
-        {
-          name: 'JavaScript',
-          bgColor: 'bg-amber-100 dark:bg-amber-950/60',
-          textColor: 'text-amber-800 dark:text-amber-300',
-          icon: BsJavascript,
-        },
-      ],
+      techStack: ['html', 'css', 'tailwind', 'javascript'],
       links: {
         github:
           'https://github.com/Hary300/Frontendmentor-Project-11-Tip-Calculator-App',
@@ -868,32 +375,7 @@ export const projects: Projects = {
       image: RatingComponent,
       description:
         'An interactive rating card component allowing users to select a rating score, submit feedback, and view a dedicated thank-you state.',
-      techStack: [
-        {
-          name: 'HTML5',
-          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
-          textColor: 'text-orange-800 dark:text-orange-300',
-          icon: FaHtml5,
-        },
-        {
-          name: 'CSS3',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: FaCss3Alt,
-        },
-        {
-          name: 'Tailwind CSS',
-          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
-          textColor: 'text-teal-800 dark:text-teal-300',
-          icon: RiTailwindCssFill,
-        },
-        {
-          name: 'JavaScript',
-          bgColor: 'bg-amber-100 dark:bg-amber-950/60',
-          textColor: 'text-amber-800 dark:text-amber-300',
-          icon: BsJavascript,
-        },
-      ],
+      techStack: ['html', 'css', 'tailwind', 'javascript'],
       links: {
         github:
           'https://github.com/Hary300/Frontendmentor-Project-12-Interactive-Rating-Component',
@@ -910,32 +392,7 @@ export const projects: Projects = {
       image: FaqAccordion,
       description:
         'An interactive FAQ accordion component featuring collapsible questions, dynamic icon toggling, and fully accessible state handling.',
-      techStack: [
-        {
-          name: 'HTML5',
-          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
-          textColor: 'text-orange-800 dark:text-orange-300',
-          icon: FaHtml5,
-        },
-        {
-          name: 'CSS3',
-          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
-          textColor: 'text-blue-800 dark:text-blue-300',
-          icon: FaCss3Alt,
-        },
-        {
-          name: 'Tailwind CSS',
-          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
-          textColor: 'text-teal-800 dark:text-teal-300',
-          icon: RiTailwindCssFill,
-        },
-        {
-          name: 'JavaScript',
-          bgColor: 'bg-amber-100 dark:bg-amber-950/60',
-          textColor: 'text-amber-800 dark:text-amber-300',
-          icon: BsJavascript,
-        },
-      ],
+      techStack: ['html', 'css', 'tailwind', 'javascript'],
       links: {
         github:
           'https://github.com/Hary300/Frontendmentor-Project-13-FAQ-Accordion',
