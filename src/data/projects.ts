@@ -1,6 +1,7 @@
 import { FaNodeJs } from 'react-icons/fa';
 import { FaReact } from 'react-icons/fa';
 import {
+  SiAxios,
   SiMongoose,
   SiReacthookform,
   SiShadcnui,
@@ -33,6 +34,10 @@ import MyPortfolio from '@/assets/images/projects-ss/MyPortfolio.webp';
 import SimpleTodoList from '@/assets/images/projects-ss/SimpleTodoList.webp';
 import SimplePortfolio from '@/assets/images/projects-ss/SimplePortfolio.webp';
 import SharinganEyes from '@/assets/images/projects-ss/SharinganEyes.webp';
+import TimeTracking from '@/assets/images/projects-ss/TimeTracking.webp';
+import TipCalculator from '@/assets/images/projects-ss/TipCalculator.webp';
+import RatingComponent from '@/assets/images/projects-ss/RatingComponent.webp';
+import FaqAccordion from '@/assets/images/projects-ss/FaqAccordion.webp';
 
 export const projects: Projects = {
   /** ==============
@@ -331,7 +336,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-18',
+      id: 'proj-05',
       title: 'Simple Todo List App',
       category: {
         name: 'Web App',
@@ -767,6 +772,174 @@ export const projects: Projects = {
       links: {
         github: 'https://github.com/Hary300/Personal-Project-05-Sharingan',
         liveDemo: 'https://sharingan-hary300.vercel.app/',
+      },
+    },
+    {
+      id: 'proj-16',
+      title: 'Time Tracking Dashboard',
+      category: {
+        name: 'Web App',
+        slug: 'web-app',
+      },
+      image: TimeTracking,
+      description:
+        'A frontend mentor challenge app to track daily, weekly, and monthly activity hours fetched dynamically via Axios.',
+      techStack: [
+        {
+          name: 'HTML5',
+          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
+          textColor: 'text-orange-800 dark:text-orange-300',
+          icon: FaHtml5,
+        },
+        {
+          name: 'Tailwind CSS',
+          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
+          textColor: 'text-teal-800 dark:text-teal-300',
+          icon: RiTailwindCssFill,
+        },
+        {
+          name: 'JavaScript',
+          bgColor: 'bg-amber-100 dark:bg-amber-950/60',
+          textColor: 'text-amber-800 dark:text-amber-300',
+          icon: BsJavascript,
+        },
+        {
+          name: 'Axios',
+          bgColor: 'bg-purple-100 dark:bg-purple-950/60',
+          textColor: 'text-purple-800 dark:text-purple-300',
+          icon: SiAxios,
+        },
+      ],
+      links: {
+        github:
+          'https://github.com/Hary300/Frontendmentor-Project-10-Time-Tracking-Dashboard',
+        liveDemo: 'https://time-tracking-dashboard-henna-alpha.vercel.app/',
+      },
+    },
+    {
+      id: 'proj-17',
+      title: 'Tip Calculator App',
+      category: {
+        name: 'Utility',
+        slug: 'utility',
+      },
+      image: TipCalculator,
+      description:
+        'A handy bill splitter and tip calculator built for dynamic percentage selection, custom tip input, and per-person cost calculations.',
+      techStack: [
+        {
+          name: 'HTML5',
+          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
+          textColor: 'text-orange-800 dark:text-orange-300',
+          icon: FaHtml5,
+        },
+        {
+          name: 'CSS3',
+          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
+          textColor: 'text-blue-800 dark:text-blue-300',
+          icon: FaCss3Alt,
+        },
+        {
+          name: 'Tailwind CSS',
+          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
+          textColor: 'text-teal-800 dark:text-teal-300',
+          icon: RiTailwindCssFill,
+        },
+        {
+          name: 'JavaScript',
+          bgColor: 'bg-amber-100 dark:bg-amber-950/60',
+          textColor: 'text-amber-800 dark:text-amber-300',
+          icon: BsJavascript,
+        },
+      ],
+      links: {
+        github:
+          'https://github.com/Hary300/Frontendmentor-Project-11-Tip-Calculator-App',
+        liveDemo: 'https://tip-calculator-app-mocha-omega.vercel.app/',
+      },
+    },
+    {
+      id: 'proj-18',
+      title: 'Interactive Rating Component',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
+      image: RatingComponent,
+      description:
+        'An interactive rating card component allowing users to select a rating score, submit feedback, and view a dedicated thank-you state.',
+      techStack: [
+        {
+          name: 'HTML5',
+          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
+          textColor: 'text-orange-800 dark:text-orange-300',
+          icon: FaHtml5,
+        },
+        {
+          name: 'CSS3',
+          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
+          textColor: 'text-blue-800 dark:text-blue-300',
+          icon: FaCss3Alt,
+        },
+        {
+          name: 'Tailwind CSS',
+          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
+          textColor: 'text-teal-800 dark:text-teal-300',
+          icon: RiTailwindCssFill,
+        },
+        {
+          name: 'JavaScript',
+          bgColor: 'bg-amber-100 dark:bg-amber-950/60',
+          textColor: 'text-amber-800 dark:text-amber-300',
+          icon: BsJavascript,
+        },
+      ],
+      links: {
+        github:
+          'https://github.com/Hary300/Frontendmentor-Project-12-Interactive-Rating-Component',
+        liveDemo: 'https://frontendmentor-project-12-interacti.vercel.app/',
+      },
+    },
+    {
+      id: 'proj-19',
+      title: 'FAQ Accordion Component',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
+      image: FaqAccordion,
+      description:
+        'An interactive FAQ accordion component featuring collapsible questions, dynamic icon toggling, and fully accessible state handling.',
+      techStack: [
+        {
+          name: 'HTML5',
+          bgColor: 'bg-orange-100 dark:bg-orange-950/60',
+          textColor: 'text-orange-800 dark:text-orange-300',
+          icon: FaHtml5,
+        },
+        {
+          name: 'CSS3',
+          bgColor: 'bg-blue-100 dark:bg-blue-950/60',
+          textColor: 'text-blue-800 dark:text-blue-300',
+          icon: FaCss3Alt,
+        },
+        {
+          name: 'Tailwind CSS',
+          bgColor: 'bg-teal-100 dark:bg-teal-950/60',
+          textColor: 'text-teal-800 dark:text-teal-300',
+          icon: RiTailwindCssFill,
+        },
+        {
+          name: 'JavaScript',
+          bgColor: 'bg-amber-100 dark:bg-amber-950/60',
+          textColor: 'text-amber-800 dark:text-amber-300',
+          icon: BsJavascript,
+        },
+      ],
+      links: {
+        github:
+          'https://github.com/Hary300/Frontendmentor-Project-13-FAQ-Accordion',
+        liveDemo: 'https://frontendmentor-project-13-faq-accor.vercel.app/',
       },
     },
   ],
