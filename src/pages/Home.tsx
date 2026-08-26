@@ -7,6 +7,7 @@ import lightHeroImage from '@/assets/images/light-group.png';
 import { themeStore } from '@/store/themeStore';
 import { projects } from '@/data/projects';
 import ProjectGrid from '@/components/ProjectGrid';
+import CodeQuiz from '@/components/quiz/CodeQuiz';
 
 const Home = () => {
   const featuredProjects = projects.featuredProjects;
@@ -45,7 +46,8 @@ const Home = () => {
           <img src={isDark ? darkHeroImage : lightHeroImage} alt='hero image' />
         </div>
       </div>
-      <div className='mt-10 flex flex-col gap-4 sm:gap-10 pb-20'>
+      <CodeQuiz />
+      <div className='mt-5 flex flex-col gap-4 sm:gap-5 pb-20'>
         <h3 className='font-semibold text-2xl'>Featured Projects</h3>
         <ProjectGrid projects={featuredProjects} />
       </div>
