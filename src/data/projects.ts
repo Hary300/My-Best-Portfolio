@@ -38,7 +38,7 @@ export const projects: Projects = {
       image: LibraryApp,
       description:
         'A library platform for discovering books, managing borrowing, and handling user accounts with role-based access.',
-      techStack: ['nextjs', 'typescript', 'reactQuery', 'tailwind'],
+      techStack: ['react', 'typescript', 'reactQuery', 'tailwind'],
       links: {
         github: 'https://github.com/Hary300/Personal-Project-31-Library-App',
         liveDemo: 'https://personal-project-31-library-app.vercel.app',
@@ -95,7 +95,7 @@ export const projects: Projects = {
       image: LibraryApp,
       description:
         'A library platform for discovering books, managing borrowing, and handling user accounts with role-based access.',
-      techStack: ['nextjs', 'typescript', 'reactQuery', 'tailwind'],
+      techStack: ['react', 'typescript', 'reactQuery', 'tailwind'],
       links: {
         github: 'https://github.com/Hary300/Personal-Project-31-Library-App',
         liveDemo: 'https://personal-project-31-library-app.vercel.app',
