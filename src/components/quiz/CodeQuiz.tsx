@@ -55,7 +55,9 @@ const CodeQuiz = () => {
         <div className='size-8 rounded-full aspect-square shrink-0 bg-portfolio-green/30 p-1 flex justify-center items-center'>
           <MdOutlineQuiz className='size-4 text-portfolio-green dark:text-emerald-300 dark:drop-shadow-glow-icon' />
         </div>{' '}
-        <p className='text-portfolio-green font-semibold'>Dev Quiz</p>
+        <p className='text-portfolio-green font-semibold'>
+          Dev Quiz ({question.category})
+        </p>
       </div>
 
       <div className='flex flex-col gap-4 w-full'>
