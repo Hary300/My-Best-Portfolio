@@ -20,10 +20,17 @@ import RatingComponent from '@/assets/images/projects-ss/RatingComponent.webp';
 import FaqAccordion from '@/assets/images/projects-ss/FaqAccordion.webp';
 import ContactFormAPI from '@/assets/images/projects-ss/ContactFormAPI.webp';
 import ContactUs from '@/assets/images/projects-ss/ContactUs.webp';
-import BluePortfolio from '@/assets/images/projects-ss/BluePorfolio.webp';
+import BluePortfolio from '@/assets/images/projects-ss/BluePortfolio.webp';
 import NewsletterSignUp from '@/assets/images/projects-ss/NewsLetterSignUp.webp';
 import BoomNumber from '@/assets/images/projects-ss/BoomNumber.webp';
 import QrCode from '@/assets/images/projects-ss/QrCode.webp';
+import BlogPreviewCard from '@/assets/images/projects-ss/BlogPreviewCard.webp';
+import SocialLinksProfile from '@/assets/images/projects-ss/SocialLinksProfile.webp';
+import SimpleOmeletteRecipe from '@/assets/images/projects-ss/SimpleOmeletteRecipe.webp';
+import ProductPreviewCard from '@/assets/images/projects-ss/ProductPreviewCard.webp';
+import FourCardFeatureSection from '@/assets/images/projects-ss/FourCardFeatureSection.webp';
+import TestimonialsGridSection from '@/assets/images/projects-ss/TestimonialsGridSection.webp';
+import ArticlePreviewComponent from '@/assets/images/projects-ss/ArticlePreviewComponent.webp';
 
 export const projects: Projects = {
   /** ==============
@@ -490,7 +497,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'wr-code-component',
+      id: 'qr-code-component',
       title: 'QR Code Component',
       category: {
         name: 'UI Component',
@@ -504,6 +511,132 @@ export const projects: Projects = {
         github: 'https://github.com/Hary300/Frontendmentor-Project-01-QR-Code',
         liveDemo:
           'https://hary300.github.io/Frontendmentor-Project-01-QR-Code/',
+      },
+    },
+    {
+      id: 'blog-preview-card',
+      title: 'Blog Preview Card',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
+      image: BlogPreviewCard,
+      description:
+        'A clean, responsive blog preview card component built with precise layout styling and modern CSS techniques.',
+      techStack: ['html', 'css'],
+      links: {
+        github:
+          'https://github.com/Hary300/Frontendmentor-Project-02-Blog-Preview-Card',
+        liveDemo:
+          'https://hary300.github.io/Frontendmentor-Project-02-Blog-Preview-Card/',
+      },
+    },
+    {
+      id: 'social-links-profile',
+      title: 'Social Links Profile',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
+      image: SocialLinksProfile,
+      description:
+        'A clean, responsive social links profile component built with precise layout styling and modern CSS techniques.',
+      techStack: ['html', 'css'],
+      links: {
+        github:
+          'https://github.com/Hary300/Frontendmentor-Project-03-Social-Links-Profile',
+        liveDemo:
+          'https://hary300.github.io/Frontendmentor-Project-03-Social-Links-Profile/',
+      },
+    },
+    {
+      id: 'simple-omelette-recipe',
+      title: 'Simple Omelette Recipe',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
+      image: SimpleOmeletteRecipe,
+      description:
+        'A clean, responsive recipe page component displaying an omelette recipe built with precise layout styling and modern CSS techniques.',
+      techStack: ['html', 'css'],
+      links: {
+        github:
+          'https://github.com/Hary300/Frontendmentor-Project-04-Recipe-Page',
+        liveDemo:
+          'https://hary300.github.io/Frontendmentor-Project-04-Recipe-Page/',
+      },
+    },
+    {
+      id: 'product-preview-card',
+      title: 'Product Preview Card',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
+      image: ProductPreviewCard,
+      description:
+        'A clean, responsive product preview card component built with precise layout styling and modern CSS techniques.',
+      techStack: ['html', 'css'],
+      links: {
+        github:
+          'https://github.com/Hary300/Frontendmentor-Project-05-Product-Preview-Card',
+        liveDemo:
+          'https://hary300.github.io/Frontendmentor-Project-05-Product-Preview-Card/',
+      },
+    },
+    {
+      id: 'four-card-feature-section',
+      title: 'Four Card Feature Section',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
+      image: FourCardFeatureSection,
+      description:
+        'A clean, responsive four card feature section component built with precise layout styling and modern CSS techniques.',
+      techStack: ['html', 'css'],
+      links: {
+        github:
+          'https://github.com/Hary300/Frontendmentor-Project-06-Four-Card-Feature-Section',
+        liveDemo:
+          'https://hary300.github.io/Frontendmentor-Project-06-Four-Card-Feature-Section/',
+      },
+    },
+    {
+      id: 'testimonials-grid-section',
+      title: 'Testimonials Grid Section',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
+      image: TestimonialsGridSection,
+      description:
+        'A clean, responsive testimonials grid section component built with precise layout styling and modern CSS techniques.',
+      techStack: ['html', 'css'],
+      links: {
+        github:
+          'https://github.com/Hary300/Frontendmentor-Project-07-Testimonials-Grid-Section',
+        liveDemo:
+          'https://hary300.github.io/Frontendmentor-Project-07-Testimonials-Grid-Section/',
+      },
+    },
+    {
+      id: 'article-preview-component',
+      title: 'Article Preview Component',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
+      image: ArticlePreviewComponent,
+      description:
+        'A clean, responsive article preview component built with precise layout styling and modern CSS techniques.',
+      techStack: ['html', 'javascript', 'css'],
+      links: {
+        github:
+          'https://github.com/Hary300/Frontendmentor-Project-08-Article-Preview-Component',
+        liveDemo:
+          'https://hary300.github.io/Frontendmentor-Project-08-Article-Preview-Component/',
       },
     },
   ],
