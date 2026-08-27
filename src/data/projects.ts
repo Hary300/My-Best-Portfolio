@@ -23,6 +23,7 @@ import ContactUs from '@/assets/images/projects-ss/ContactUs.webp';
 import BluePortfolio from '@/assets/images/projects-ss/BluePorfolio.webp';
 import NewsletterSignUp from '@/assets/images/projects-ss/NewsLetterSignUp.webp';
 import BoomNumber from '@/assets/images/projects-ss/BoomNumber.webp';
+import QrCode from '@/assets/images/projects-ss/QrCode.webp';
 
 export const projects: Projects = {
   /** ==============
@@ -30,7 +31,7 @@ export const projects: Projects = {
    * ================*/
   featuredProjects: [
     {
-      id: 'featProj-01',
+      id: 'library-app',
       title: 'Library App',
       category: {
         name: 'Web App',
@@ -47,7 +48,7 @@ export const projects: Projects = {
     },
 
     {
-      id: 'featProj-02',
+      id: 'meal-order-app',
       title: 'Meal Order App',
       category: {
         name: 'Web App',
@@ -64,7 +65,7 @@ export const projects: Projects = {
     },
 
     {
-      id: 'featProj-03',
+      id: 'hary-movie-db',
       title: 'Hary Movies DB',
       category: {
         name: 'Web App',
@@ -87,7 +88,7 @@ export const projects: Projects = {
    * ================*/
   allProjects: [
     {
-      id: 'proj-01',
+      id: 'library-management-app',
       title: 'Library Management App',
       category: {
         name: 'Web App',
@@ -103,7 +104,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-02',
+      id: 'todo-management-app',
       title: 'Todo Management App',
       category: {
         name: 'Web App',
@@ -120,7 +121,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-03',
+      id: 'hary-movies-db',
       title: 'Hary Movies DB',
       category: {
         name: 'Web App',
@@ -136,7 +137,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-04',
+      id: 'itachi-landing-page',
       title: 'Itachi Landing Page',
       category: {
         name: 'Landing Page',
@@ -153,7 +154,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-05',
+      id: 'simple-todo-list-app',
       title: 'Simple Todo List App',
       category: {
         name: 'Web App',
@@ -170,7 +171,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'Proj-06',
+      id: 'meal-order-app',
       title: 'Meal Order App',
       category: {
         name: 'Web App',
@@ -186,7 +187,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-07',
+      id: 'voice-counter-app',
       title: 'Voice Counter App',
       category: {
         name: 'Utility',
@@ -204,7 +205,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-08',
+      id: 'neumorphic-calculator',
       title: 'Neumorphic Calculator',
       category: {
         name: 'Utility',
@@ -221,7 +222,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-09',
+      id: 'todo-management-api',
       title: 'Todo Management API',
       category: {
         name: 'Utility',
@@ -239,7 +240,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-10',
+      id: 'modern-company-profile',
       title: 'Modern Company Profile',
       category: {
         name: 'Landing Page',
@@ -256,7 +257,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-11',
+      id: 'green-personal-portfolio',
       title: 'Green Personal Portfolio',
       category: {
         name: 'Landing Page',
@@ -272,7 +273,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-12',
+      id: 'element-db',
       title: 'ElementDB',
       category: {
         name: 'Utility',
@@ -288,7 +289,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-13',
+      id: 'my-best-portfolio',
       title: 'My Best Portfolio',
       category: {
         name: 'Landing Page',
@@ -304,7 +305,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-14',
+      id: 'simple-portfolio',
       title: 'Simple Portfolio',
       category: {
         name: 'Landing Page',
@@ -321,7 +322,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-15',
+      id: 'sharingan-spinning-animation',
       title: 'Sharingan Spinning Animation',
       category: {
         name: 'UI Component',
@@ -337,7 +338,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-16',
+      id: 'time-tracking-dashboard',
       title: 'Time Tracking Dashboard',
       category: {
         name: 'Web App',
@@ -354,7 +355,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-17',
+      id: 'tip-calculator-app',
       title: 'Tip Calculator App',
       category: {
         name: 'Utility',
@@ -371,7 +372,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-18',
+      id: 'interactive-rating-component',
       title: 'Interactive Rating Component',
       category: {
         name: 'UI Component',
@@ -388,7 +389,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-19',
+      id: 'faq-accordion-component',
       title: 'FAQ Accordion Component',
       category: {
         name: 'UI Component',
@@ -405,7 +406,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-20',
+      id: 'contact-form-api',
       title: 'Contact Form API',
       category: {
         name: 'Utility',
@@ -423,7 +424,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-21',
+      id: 'contact-us-component',
       title: 'Contact Us Component',
       category: {
         name: 'UI Component',
@@ -440,7 +441,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-22',
+      id: 'blue-portfolio',
       title: 'Blue Portfolio',
       category: {
         name: 'Landing Page',
@@ -456,7 +457,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-23',
+      id: 'newsletter-sign-up-form',
       title: 'Newsletter Sign-Up Form',
       category: {
         name: 'UI Component',
@@ -473,7 +474,7 @@ export const projects: Projects = {
       },
     },
     {
-      id: 'proj-24',
+      id: 'boom-number',
       title: 'Boom Number',
       category: {
         name: 'Game',
@@ -486,6 +487,23 @@ export const projects: Projects = {
       links: {
         github: 'https://github.com/Hary300/Personal-Project-04-Boom-Number',
         liveDemo: 'https://personal-project-04-boom-number.vercel.app/',
+      },
+    },
+    {
+      id: 'wr-code-component',
+      title: 'QR Code Component',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
+      image: QrCode,
+      description:
+        'A clean, responsive component displaying a QR code card built with precise layout styling and modern CSS techniques.',
+      techStack: ['html', 'css'],
+      links: {
+        github: 'https://github.com/Hary300/Frontendmentor-Project-01-QR-Code',
+        liveDemo:
+          'https://hary300.github.io/Frontendmentor-Project-01-QR-Code/',
       },
     },
   ],
