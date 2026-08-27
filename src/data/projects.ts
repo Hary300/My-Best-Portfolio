@@ -22,6 +22,7 @@ import ContactFormAPI from '@/assets/images/projects-ss/ContactFormAPI.webp';
 import ContactUs from '@/assets/images/projects-ss/ContactUs.webp';
 import BluePortfolio from '@/assets/images/projects-ss/BluePorfolio.webp';
 import NewsletterSignUp from '@/assets/images/projects-ss/NewsLetterSignUp.webp';
+import BoomNumber from '@/assets/images/projects-ss/BoomNumber.webp';
 
 export const projects: Projects = {
   /** ==============
@@ -469,6 +470,22 @@ export const projects: Projects = {
         github:
           'https://github.com/Hary300/Frontendmentor-Project-09-Newsletter-Sign-Up-Form',
         liveDemo: 'https://newsletter-sign-up-form-teal.vercel.app/',
+      },
+    },
+    {
+      id: 'proj-24',
+      title: 'Boom Number',
+      category: {
+        name: 'Game',
+        slug: 'game',
+      },
+      image: BoomNumber,
+      description:
+        'An interactive web-based number game featuring customizable game limits, real-time feedback, and dynamic visual state updates.',
+      techStack: ['html', 'css', 'tailwind', 'javascript'],
+      links: {
+        github: 'https://github.com/Hary300/Personal-Project-04-Boom-Number',
+        liveDemo: 'https://personal-project-04-boom-number.vercel.app/',
       },
     },
   ],
