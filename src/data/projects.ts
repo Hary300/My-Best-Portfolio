@@ -31,6 +31,7 @@ import ProductPreviewCard from '@/assets/images/projects-ss/ProductPreviewCard.w
 import FourCardFeatureSection from '@/assets/images/projects-ss/FourCardFeatureSection.webp';
 import TestimonialsGridSection from '@/assets/images/projects-ss/TestimonialsGridSection.webp';
 import ArticlePreviewComponent from '@/assets/images/projects-ss/ArticlePreviewComponent.webp';
+import PinkPortfolio from '@/assets/images/projects-ss/PinkPortfolio.webp';
 
 export const projects: Projects = {
   /** ==============
@@ -94,6 +95,22 @@ export const projects: Projects = {
    * ALL PROJECTS
    * ================*/
   allProjects: [
+    {
+      id: 'pink-portfolio',
+      title: 'Pink Portfolio',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
+      image: PinkPortfolio,
+      description:
+        'A clean, responsive pink portfolio component built with precise layout styling and modern CSS techniques.',
+      techStack: ['react', 'typescript', 'shadcn', 'tailwind'],
+      links: {
+        github: 'https://github.com/Hary300/Personal-Project-34-Pink-Portfolio',
+        liveDemo: 'https://personal-project-34-pink-portfolio.vercel.app/',
+      },
+    },
     {
       id: 'library-management-app',
       title: 'Library Management App',
