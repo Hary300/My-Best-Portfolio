@@ -99,12 +99,12 @@ export const projects: Projects = {
       id: 'pink-portfolio',
       title: 'Pink Portfolio',
       category: {
-        name: 'UI Component',
-        slug: 'ui-component',
+        name: 'Landing Page',
+        slug: 'landing-page',
       },
       image: PinkPortfolio,
       description:
-        'A clean, responsive pink portfolio component built with precise layout styling and modern CSS techniques.',
+        'A modern, stylish personal portfolio featuring a sleek pink aesthetic, dynamic UI components, and fully responsive layout.',
       techStack: ['react', 'typescript', 'shadcn', 'tailwind'],
       links: {
         github: 'https://github.com/Hary300/Personal-Project-34-Pink-Portfolio',
