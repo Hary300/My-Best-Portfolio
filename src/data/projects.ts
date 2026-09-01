@@ -1,37 +1,40 @@
 import type { Projects, Total } from '@/types/projects';
-import LibraryApp from '@/assets/images/projects-ss/LibraryApp.webp';
-import RestaurantApp from '@/assets/images/projects-ss/RestaurantApp.webp';
-import MovieDB from '@/assets/images/projects-ss/MovieDB.webp';
-import TodoListApp from '@/assets/images/projects-ss/TodoListApp.webp';
-import TodoListApi from '@/assets/images/projects-ss/TodoListAPI.webp';
-import CompanyProfile from '@/assets/images/projects-ss/CompanyProfile.webp';
-import ItachiLandingPage from '@/assets/images/projects-ss/ItachiLandingPage.webp';
-import VoiceCounter from '@/assets/images/projects-ss/VoiceCounter.webp';
-import NeumorphicCalculator from '@/assets/images/projects-ss/NeumorphicCalculator.webp';
-import GreenPortfolio from '@/assets/images/projects-ss/GreenPortfolio.webp';
-import ElementDb from '@/assets/images/projects-ss/ElementDb.webp';
-import MyPortfolio from '@/assets/images/projects-ss/MyPortfolio.webp';
-import SimpleTodoList from '@/assets/images/projects-ss/SimpleTodoList.webp';
-import SimplePortfolio from '@/assets/images/projects-ss/SimplePortfolio.webp';
-import SharinganEyes from '@/assets/images/projects-ss/SharinganEyes.webp';
-import TimeTracking from '@/assets/images/projects-ss/TimeTracking.webp';
-import TipCalculator from '@/assets/images/projects-ss/TipCalculator.webp';
-import RatingComponent from '@/assets/images/projects-ss/RatingComponent.webp';
-import FaqAccordion from '@/assets/images/projects-ss/FaqAccordion.webp';
-import ContactFormAPI from '@/assets/images/projects-ss/ContactFormAPI.webp';
-import ContactUs from '@/assets/images/projects-ss/ContactUs.webp';
-import BluePortfolio from '@/assets/images/projects-ss/BluePortfolio.webp';
-import NewsletterSignUp from '@/assets/images/projects-ss/NewsLetterSignUp.webp';
-import BoomNumber from '@/assets/images/projects-ss/BoomNumber.webp';
-import QrCode from '@/assets/images/projects-ss/QrCode.webp';
-import BlogPreviewCard from '@/assets/images/projects-ss/BlogPreviewCard.webp';
-import SocialLinksProfile from '@/assets/images/projects-ss/SocialLinksProfile.webp';
-import SimpleOmeletteRecipe from '@/assets/images/projects-ss/SimpleOmeletteRecipe.webp';
-import ProductPreviewCard from '@/assets/images/projects-ss/ProductPreviewCard.webp';
-import FourCardFeatureSection from '@/assets/images/projects-ss/FourCardFeatureSection.webp';
-import TestimonialsGridSection from '@/assets/images/projects-ss/TestimonialsGridSection.webp';
-import ArticlePreviewComponent from '@/assets/images/projects-ss/ArticlePreviewComponent.webp';
-import PinkPortfolio from '@/assets/images/projects-ss/PinkPortfolio.webp';
+import {
+  LibraryApp,
+  RestaurantApp,
+  MovieDB,
+  TodoListApp,
+  TodoListApi,
+  CompanyProfile,
+  ItachiLandingPage,
+  VoiceCounter,
+  NeumorphicCalculator,
+  GreenPortfolio,
+  ElementDb,
+  MyPortfolio,
+  SimpleTodoList,
+  SimplePortfolio,
+  SharinganEyes,
+  TimeTracking,
+  TipCalculator,
+  RatingComponent,
+  FaqAccordion,
+  ContactFormAPI,
+  ContactUs,
+  BluePortfolio,
+  NewsletterSignUp,
+  BoomNumber,
+  QrCode,
+  BlogPreviewCard,
+  SocialLinksProfile,
+  SimpleOmeletteRecipe,
+  ProductPreviewCard,
+  FourCardFeatureSection,
+  TestimonialsGridSection,
+  ArticlePreviewComponent,
+  PinkPortfolio,
+  TealCyanPortfolio,
+} from '@/assets/images/projects-ss';
 
 export const projects: Projects = {
   /** ==============
@@ -95,6 +98,23 @@ export const projects: Projects = {
    * ALL PROJECTS
    * ================*/
   allProjects: [
+    {
+      id: 'teal-cyan-portfolio',
+      title: 'Teal Cyan Portfolio',
+      category: {
+        name: 'Landing Page',
+        slug: 'landing-page',
+      },
+      image: TealCyanPortfolio,
+      description:
+        'A fresh, modern developer portfolio featuring a vibrant teal and cyan theme with polished interactive components.',
+      techStack: ['react', 'typescript', 'shadcn', 'tailwind'],
+      links: {
+        github:
+          'https://github.com/Hary300/Personal-Project-35-Teal-Cyan-Portfolio',
+        liveDemo: 'https://personal-project-35-teal-cyan-portf.vercel.app/',
+      },
+    },
     {
       id: 'pink-portfolio',
       title: 'Pink Portfolio',
