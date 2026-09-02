@@ -32,3 +32,4 @@ export { default as TestimonialsGridSection } from './TestimonialsGridSection.we
 export { default as ArticlePreviewComponent } from './ArticlePreviewComponent.webp';
 export { default as PinkPortfolio } from './PinkPortfolio.webp';
 export { default as TealCyanPortfolio } from './TealCyanPortfolio.webp';
+export { default as PurpleMagentaPortfolio } from './PurpleMagentaPortfolio.webp';

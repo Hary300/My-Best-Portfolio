@@ -2,6 +2,7 @@ import Container from '@/components/layouts/Container';
 import ProjectGrid from '@/components/ProjectGrid';
 import { Button } from '@/components/ui/button';
 import { projects } from '@/data/projects';
+import { shuffle } from '@/lib/shuffle';
 import { cn } from '@/lib/utils';
 import { useSearchParams } from 'react-router-dom';
 
@@ -38,6 +39,8 @@ const Projects = () => {
         (project) => project.category.slug === categoryQuery
       )
     : projects.allProjects;
+
+  const shuffledProjects = shuffle(selectedProjects);
 
   const tabs: Tabs[] = [
     {
@@ -113,7 +116,7 @@ const Projects = () => {
           );
         })}
       </div>
-      <ProjectGrid projects={selectedProjects} />
+      <ProjectGrid projects={shuffledProjects} />
     </Container>
   );
 };

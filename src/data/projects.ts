@@ -34,6 +34,7 @@ import {
   ArticlePreviewComponent,
   PinkPortfolio,
   TealCyanPortfolio,
+  PurpleMagentaPortfolio,
 } from '@/assets/images/projects-ss';
 
 export const projects: Projects = {
@@ -298,6 +299,23 @@ export const projects: Projects = {
         github:
           'https://github.com/Hary300/Personal-Project-27-Company-Profile',
         liveDemo: 'https://personal-project-27-company-profile.vercel.app/',
+      },
+    },
+    {
+      id: 'purple-magenta-portfolio',
+      title: 'Purple Magenta Portfolio',
+      category: {
+        name: 'Landing Page',
+        slug: 'landing-page',
+      },
+      image: PurpleMagentaPortfolio,
+      description:
+        'A sleek personal portfolio showcasing a bold purple-magenta dynamic, fluid layouts, and polished component interactions.',
+      techStack: ['react', 'typescript', 'shadcn', 'tailwind'],
+      links: {
+        github:
+          'https://github.com/Hary300/Personal-Project-36-Purple-Magenta-Portfolio',
+        liveDemo: 'https://personal-project-36-purple-magenta.vercel.app/',
       },
     },
     {
