@@ -8,6 +8,7 @@ import { RiCertificate2Line } from 'react-icons/ri';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import AchievementLearningGrid from '@/components/AchievementLearningGrid';
+import AchievementCertificateGrid from '@/components/AchievementCertificateGrid';
 
 type AchievementCategories = 'learning' | 'certificate';
 
@@ -93,6 +94,7 @@ const Achievement = () => {
         })}
       </section>
       {activeCategory === 'learning' && <AchievementLearningGrid />}
+      {activeCategory === 'certificate' && <AchievementCertificateGrid />}
     </Container>
   );
 };

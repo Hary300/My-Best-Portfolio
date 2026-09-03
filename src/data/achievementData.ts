@@ -7,6 +7,7 @@ import type { IconType } from 'react-icons/lib';
 import { IoDocumentTextOutline } from 'react-icons/io5';
 import { RxGear } from 'react-icons/rx';
 import { IoBookOutline } from 'react-icons/io5';
+import ahademy from '@/assets/images/certificates/ahademy.webp';
 
 export interface Learning {
   id: string;
@@ -24,6 +25,7 @@ export interface Certificate {
   title: string;
   issuer: string;
   issuedYear: string;
+  image: string;
   credentialUrl: string;
 }
 
@@ -32,8 +34,8 @@ interface AchievementData {
   header: HeaderData;
   heroImg: HeroImg;
 
-  learning: Learning[];
-  certificate: Certificate[];
+  learnings: Learning[];
+  certificates: Certificate[];
 }
 
 export const achievementData: AchievementData = {
@@ -48,17 +50,18 @@ export const achievementData: AchievementData = {
     dark: achievementHeroDark,
     light: achievementHeroLight,
   },
-  certificate: [
+  certificates: [
     {
       id: 'frontEnd Ahademy boothcamp',
       issuer: 'Ahademy',
       issuedYear: '2026',
       title: 'Front-End Developer Web Programming Hack',
+      image: ahademy,
       credentialUrl:
         'https://credsverse.com/credentials/006f7807-010e-4e48-934a-35c4e7a56dcc?preview=1',
     },
   ],
-  learning: [
+  learnings: [
     {
       id: 'learning-backend-typescript',
       title: 'Backend — TypeScript',
@@ -183,6 +186,25 @@ export const achievementData: AchievementData = {
       accentColorDark: '#5A3B53',
     },
     {
+      id: 'roadmap-react-typescript-pemula-job-ready',
+      title: 'React TypeScript Notes',
+      description:
+        'Comprehensive roadmap and guide for beginners to become job-ready with React and TypeScript.',
+      linkNotion:
+        'https://app.notion.com/p/Roadmap-React-TypeScript-Pemula-Job-Ready-35fda22dd34180c69e6dd7e1761453ff?source=copy_link',
+      tags: [
+        'React',
+        'TypeScript',
+        'Roadmap',
+        'Frontend',
+        'Learning',
+        'Career',
+      ],
+      icon: IoDocumentTextOutline,
+      accentColor: '#F3E4C9',
+      accentColorDark: '#423A2B',
+    },
+    {
       id: 'wpu-javascript',
       title: 'Basic JavaScript',
       description: 'Notes and exercises about basic Javascript.',
@@ -204,6 +226,40 @@ export const achievementData: AchievementData = {
       icon: IoDocumentTextOutline,
       accentColor: '#D25353',
       accentColorDark: '#4D1C1C',
+    },
+    {
+      id: 'css3-notes',
+      title: 'CSS3 Notes',
+      description: 'Notes and exercises following the CSS3 learning series.',
+      linkNotion:
+        'https://app.notion.com/p/WPU-CSS3-31dda22dd341805ea0b9e08cca003ba8?source=copy_link',
+      tags: ['CSS3', 'Styling', 'Web Development', 'Frontend', 'Learning'],
+      icon: IoDocumentTextOutline,
+      accentColor: '#9FA1FF',
+      accentColorDark: '#313366',
+    },
+
+    {
+      id: 'css-notes',
+      title: 'CSS Notes',
+      description: 'Notes and exercises following the CSS learning series.',
+      linkNotion:
+        'https://app.notion.com/p/WPU-CSS-313da22dd34180cfba0cf9903e6d606c?source=copy_link',
+      tags: ['CSS', 'Styling', 'Web Development', 'Frontend', 'Learning'],
+      icon: IoDocumentTextOutline,
+      accentColor: '#88BDA4',
+      accentColorDark: '#23382D',
+    },
+    {
+      id: 'html-notes',
+      title: 'HTML Notes',
+      description: 'Notes and exercises following the HTML learning series.',
+      linkNotion:
+        'https://app.notion.com/p/WPU-HTML-312da22dd34180349925f05b11146ee3?source=copy_link',
+      tags: ['HTML', 'Web Development', 'Frontend', 'Learning'],
+      icon: IoDocumentTextOutline,
+      accentColor: '#A290B7',
+      accentColorDark: '#3B2F45',
     },
   ],
 };

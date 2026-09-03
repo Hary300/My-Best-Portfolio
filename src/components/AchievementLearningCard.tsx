@@ -25,7 +25,7 @@ const AchievementLearningCard = ({
     >
       <div className='flex flex-col gap-2'>
         <Icon className='size-10' />
-        <p className='font-semibold group-hover:underline'>{data.title}</p>
+        <p className='font-semibold group-hover:underline '>{data.title}</p>
         <p className='text-xs max-w-[clamp(220px,calc(93.75vw-80px),300px)] md:max-w-45'>
           {data.description}
         </p>
