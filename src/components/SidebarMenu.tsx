@@ -1,16 +1,16 @@
-import { mobileMenus, type MobileMenuSlug } from '@/data/mobile-menus';
 import { cn } from '@/lib/utils';
 import { useSearchParams } from 'react-router-dom';
 import { Button } from './ui/button';
-import { socialLinks } from '@/data/social-links';
+import { socialLinks } from '@/data/socialData';
 import Header from './Header';
+import { menus, type MenuSlug } from '@/data/menusData';
 
 const SidebarMenu = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const tabQuery = searchParams.get('tab');
   const activeTab = tabQuery ? tabQuery : 'home';
 
-  const handleClickMenu = (mobileMenuSlug: MobileMenuSlug) => {
+  const handleClickMenu = (mobileMenuSlug: MenuSlug) => {
     const params = new URLSearchParams();
     if (mobileMenuSlug === 'home') {
       params.delete('tab');
@@ -29,7 +29,7 @@ const SidebarMenu = () => {
           <p className='dark:text-zinc-300'>Available for opportunities</p>
         </div>
         <div className='flex flex-col gap-1'>
-          {mobileMenus.map((menu) => {
+          {menus.map((menu) => {
             const Icon = menu.icon;
             return (
               <Button

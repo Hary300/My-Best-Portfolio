@@ -1,4 +1,4 @@
-import type { Skill } from '@/data/skills';
+import type { Skill } from '@/data/skillsData';
 import { cn } from '@/lib/utils';
 
 interface SkillCardProps {

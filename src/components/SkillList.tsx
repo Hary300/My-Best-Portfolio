@@ -1,10 +1,11 @@
-import { skillCategories } from '@/data/skills';
+import { skillData } from '@/data/skillsData';
 import SkillCard from './SkillCard';
 
 const SkillList = () => {
+  const categories = skillData.categories;
   return (
     <div className='flex flex-col gap-4 '>
-      {skillCategories.map((category) => (
+      {categories.map((category) => (
         <div key={category.id} className='flex flex-col gap-4'>
           <p className='font-semibold text-lg text-portfolio-green '>
             {category.name}

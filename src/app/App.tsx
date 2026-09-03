@@ -3,17 +3,32 @@ import { themeStore } from '@/store/themeStore';
 import { useEffect } from 'react';
 import SidebarMenu from '@/components/SidebarMenu';
 import { useSearchParams } from 'react-router-dom';
-import Home from '@/pages/Home';
-import Projects from '@/pages/Projects';
-import Skills from '@/pages/Skills';
-import About from '@/pages/about/About';
-import Contact from '@/pages/contact/Contact';
 import { Toaster } from 'sonner';
+import type { MenuSlug } from '@/data/menusData';
+import Home from '@/pages/01-home';
+import Projects from '@/pages/02-projects';
+import Skills from '@/pages/03-skills';
+import About from '@/pages/04-about';
+import Achievement from '@/pages/05-achievement';
+import Contact from '@/pages/06-contact';
+
+const menuSlug: MenuSlug[] = [
+  'home',
+  'projects',
+  'skills',
+  'about',
+  'contact',
+  'achievement',
+] as const;
+
+const isMenuSlug = (value: string | null): value is MenuSlug => {
+  return value !== null && menuSlug.includes(value as MenuSlug);
+};
 
 function App() {
   const [searchParams] = useSearchParams();
   const tabQuery = searchParams.get('tab');
-  const activeTab = tabQuery ? tabQuery : 'home';
+  const activeTab: MenuSlug = isMenuSlug(tabQuery) ? tabQuery : 'home';
   const isDark = themeStore((state) => state.isDark);
 
   useEffect(() => {
@@ -21,13 +36,14 @@ function App() {
   }, [isDark]);
 
   return (
-    <div className='flex'>
+    <div className='flex max-w-385 mx-auto'>
       <SidebarMenu />
       <MobileMenu />
       {activeTab === 'home' && <Home />}
       {activeTab === 'projects' && <Projects />}
       {activeTab === 'skills' && <Skills />}
       {activeTab === 'about' && <About />}
+      {activeTab === 'achievement' && <Achievement />}
       {activeTab === 'contact' && <Contact />}
       <Toaster
         duration={3000}

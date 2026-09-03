@@ -5,7 +5,7 @@ import {
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Button } from './ui/button';
-import { contactData } from '@/data/contact';
+import { contactData } from '@/data/contactData';
 import InputField from './InputField';
 import { toast } from 'sonner';
 

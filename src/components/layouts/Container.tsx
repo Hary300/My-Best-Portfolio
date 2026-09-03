@@ -3,14 +3,16 @@ import Header from '../Header';
 import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
 import { FaArrowUpLong } from 'react-icons/fa6';
+import type { LucideIcon } from 'lucide-react';
 
 interface ContainerProps {
+  Icon: LucideIcon;
   title: string;
   children: ReactNode;
   className?: string;
 }
 
-const Container = ({ children, className, title }: ContainerProps) => {
+const Container = ({ children, className, title, Icon }: ContainerProps) => {
   const [isScroll, setIsScroll] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -44,7 +46,10 @@ const Container = ({ children, className, title }: ContainerProps) => {
       <div className='block sm:hidden'>
         <Header />
       </div>
-      <h2 className='font-semibold text-md sm:text-xl'>{title}</h2>
+      <div className='flex gap-1 items-center'>
+        <Icon className='size-4 text-portfolio-green' />
+        <h2 className='font-semibold text-md sm:text-xl'>{title}</h2>
+      </div>
       {children}
       <Button
         className={cn(

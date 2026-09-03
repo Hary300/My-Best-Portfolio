@@ -1,4 +1,4 @@
-import { quizQuestions, type QuizQuestion } from '@/data/quiz-questions';
+import { quizQuestions, type QuizQuestion } from '@/data/quizQuestionsData';
 import { Button } from '../ui/button';
 import CodeBlock from './CodeBlock';
 import { MdOutlineQuiz } from 'react-icons/md';
@@ -26,6 +26,7 @@ const CodeQuiz = () => {
   const [question, setQuestion] = useState<QuizQuestion>(
     getRandomQuestion({ questions: quizQuestions })
   );
+
   const [selectedId, setSelectedId] = useState<string | null>(null);
 
   const handleClickAnswer = (id: string) => {
@@ -50,7 +51,10 @@ const CodeQuiz = () => {
   };
 
   return (
-    <div className='flex flex-col gap-4 p-4 rounded-lg bg-white dark:bg-portfolio-dark-secondary shadow-subtle mt-5'>
+    <section
+      id='home-quiz'
+      className='flex flex-col gap-4 p-4 rounded-lg bg-white dark:bg-portfolio-dark-secondary shadow-subtle mt-5'
+    >
       <div className='flex gap-1 items-center text-2xl '>
         <div className='size-8 rounded-full aspect-square shrink-0 bg-portfolio-green/30 p-1 flex justify-center items-center'>
           <MdOutlineQuiz className='size-4 text-portfolio-green dark:text-emerald-300 dark:drop-shadow-glow-icon' />
@@ -94,7 +98,7 @@ const CodeQuiz = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

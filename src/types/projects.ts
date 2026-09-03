@@ -1,3 +1,5 @@
+import type { LucideIcon } from 'lucide-react';
+
 export type TechStackSlug =
   | 'html'
   | 'css'
@@ -59,8 +61,8 @@ export interface Total {
   game: number;
 }
 
-export interface Projects {
-  featuredProjects: Project[];
+export interface ProjectsData {
+  icon: LucideIcon;
   allProjects: Project[];
   total: Total;
 }
