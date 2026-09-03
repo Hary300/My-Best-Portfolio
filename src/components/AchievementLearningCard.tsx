@@ -26,7 +26,9 @@ const AchievementLearningCard = ({
       <div className='flex flex-col gap-2'>
         <Icon className='size-10' />
         <p className='font-semibold group-hover:underline'>{data.title}</p>
-        <p className='text-xs max-w-75  md:max-w-45'>{data.description}</p>
+        <p className='text-xs max-w-[clamp(220px,calc(93.75vw-80px),300px)] md:max-w-45'>
+          {data.description}
+        </p>
       </div>
       <div
         className='absolute inset-y-0 right-0 flex p-3 bg-accent dark:bg-(--accent-dark)'
@@ -37,7 +39,14 @@ const AchievementLearningCard = ({
           } as CSSProperties
         }
       >
-        <p className='text-neutral-900 font-bold'>{number}</p>
+        <p
+          className={cn(
+            'text-neutral-900 font-bold',
+            isDark && 'text-portfolio-gray-muted'
+          )}
+        >
+          {number}
+        </p>
         <div className='absolute inset-x-0 bottom-0 h-[calc(100%-3rem)] bg-[color-mix(in_oklab,var(--accent)_70%,white)] dark:bg-[color-mix(in_oklab,var(--accent-dark)_70%,white)]' />
       </div>
     </a>

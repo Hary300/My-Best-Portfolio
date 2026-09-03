@@ -84,6 +84,18 @@ export const achievementData: AchievementData = {
       accentColorDark: '#4A463D',
     },
     {
+      id: 'react-with-hary300',
+      title: 'React with Hary300',
+      description:
+        'Notes and exercises following the React with Hary300 learning series.',
+      linkNotion:
+        'https://app.notion.com/p/React-with-Hary300-35cda22dd34180e1ac79f54a763881db?source=copy_link',
+      tags: ['React', 'JavaScript', 'Course', 'Learning', 'Frontend'],
+      icon: IoDocumentTextOutline,
+      accentColor: '#8CA9FF',
+      accentColorDark: '#2B3C68',
+    },
+    {
       id: 'setup-typescript',
       title: 'Typescript Setup',
       description: 'A step-by-step guide to configuring TypeScript projects.',
@@ -93,6 +105,24 @@ export const achievementData: AchievementData = {
       icon: RxGear,
       accentColor: '#E2A16F',
       accentColorDark: '#6B4323',
+    },
+    {
+      id: 'logic-notes',
+      title: 'Logic Notes',
+      description:
+        'Notes and exercises for programming logic and problem solving.',
+      linkNotion:
+        'https://app.notion.com/p/Logic-Notes-3ccda22dd341806693b9fb2783670fe3?source=copy_link',
+      tags: [
+        'Logic',
+        'Algorithm',
+        'Problem Solving',
+        'Learning',
+        'Programming',
+      ],
+      icon: IoBookOutline,
+      accentColor: '#BADFDB',
+      accentColorDark: '#233835',
     },
     {
       id: 'setup-css',
@@ -129,6 +159,18 @@ export const achievementData: AchievementData = {
       accentColorDark: '#2D3748',
     },
     {
+      id: 'javascript-methods',
+      title: 'JavaScript Methods',
+      description:
+        'Quick-reference cheat sheet of key JavaScript methods for everyday frontend work.',
+      linkNotion:
+        'https://app.notion.com/p/JavaScript-Methods-294da22dd341803f9d55ff1ad80d92dc?source=copy_link',
+      tags: ['JavaScript', 'Methods', 'Frontend', 'Cheatsheet', 'React'],
+      icon: IoBookOutline,
+      accentColor: '#FFCB56',
+      accentColorDark: '#523F16',
+    },
+    {
       id: 'svg-roadmap-react',
       title: 'SVG Roadmap',
       description:
@@ -139,6 +181,29 @@ export const achievementData: AchievementData = {
       icon: IoDocumentTextOutline,
       accentColor: '#DDAED3',
       accentColorDark: '#5A3B53',
+    },
+    {
+      id: 'wpu-javascript',
+      title: 'Basic JavaScript',
+      description: 'Notes and exercises about basic Javascript.',
+      linkNotion:
+        'https://app.notion.com/p/WPU-JavaScript-302da22dd341807ca1cae243198d1cab?source=copy_link',
+      tags: ['JavaScript', 'Course', 'WPU', 'Learning'],
+      icon: IoDocumentTextOutline,
+      accentColor: '#91AE6E',
+      accentColorDark: '#2C391E',
+    },
+    {
+      id: 'javascript-advanced',
+      title: 'Advanced JavaScript',
+      description:
+        'Notes and exercises on advanced JavaScript concepts and patterns.',
+      linkNotion:
+        'https://app.notion.com/p/WPU-Javascript-lanjutan-322da22dd34180bc843cfda17983e5b3?source=copy_link',
+      tags: ['JavaScript', 'Advanced', 'Learning', 'Notes'],
+      icon: IoDocumentTextOutline,
+      accentColor: '#D25353',
+      accentColorDark: '#4D1C1C',
     },
   ],
 };
