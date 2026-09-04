@@ -76,7 +76,7 @@ export const achievementData: AchievementData = {
         'https://app.notion.com/p/Learning-Backend-TypeScript-Version-37dda22dd34180889049e8d3dba8f8ce?source=copy_link',
       tags: ['Backend', 'TypeScript', 'Node.js'],
       description:
-        'Backend architecture notes and REST API handling with TypeScript.',
+        'Backend architecture and REST API handling with TypeScript.',
       icon: IoDocumentTextOutline,
       accentColor: '#BADFDB',
       accentColorDark: '#2E5B55',
@@ -85,8 +85,7 @@ export const achievementData: AchievementData = {
       id: 'learning-react-hook-form',
       title: 'React Hook Form',
       category: 'roadmap',
-      description:
-        'Building forms in React, handling form, validation, and integration with Zod.',
+      description: 'Building and handling form. Validation with Zod.',
       linkNotion:
         'https://app.notion.com/p/React-Hook-Form-RHF-37eda22dd34180d2a595e741ae4fe190',
       tags: ['React', 'React Hook Form', 'Zod', 'Frontend'],
@@ -110,8 +109,7 @@ export const achievementData: AchievementData = {
       id: 'carousel-logic-notes',
       title: 'Carousel Logic',
       category: 'logic',
-      description:
-        'Notes and exercises for programming logic and problem solving.',
+      description: 'Carousel component building logic.',
       linkNotion:
         'https://app.notion.com/p/Carousel-Logic-Notes-3ccda22dd341806693b9fb2783670fe3?source=copy_link',
       tags: [
@@ -153,8 +151,7 @@ export const achievementData: AchievementData = {
       id: 'skeleton-height',
       title: 'Skeleton Height',
       category: 'reference',
-      description:
-        'Converting font sizes (typography) into appropriate skeleton loader heights.',
+      description: 'Converting font sizes into skeleton loader heights.',
       linkNotion:
         'https://app.notion.com/p/Skeleton-Height-3aada22dd34180d7b3f6f0c1b8180a94?source=copy_link',
       tags: ['UI', 'Skeleton', 'CSS', 'Frontend'],
@@ -166,8 +163,7 @@ export const achievementData: AchievementData = {
       id: 'javascript-methods',
       title: 'JavaScript Methods',
       category: 'reference',
-      description:
-        'Quick-reference cheat sheet of key JavaScript methods for everyday frontend work.',
+      description: 'Quick-reference cheat sheet of JavaScript methods.',
       linkNotion:
         'https://app.notion.com/p/JavaScript-Methods-294da22dd341803f9d55ff1ad80d92dc?source=copy_link',
       tags: ['JavaScript', 'Methods', 'Frontend', 'Cheatsheet', 'React'],
@@ -179,8 +175,7 @@ export const achievementData: AchievementData = {
       id: 'svg-roadmap-react',
       title: 'SVG',
       category: 'roadmap',
-      description:
-        'Learning SVG: from core concepts to animation and optimization.',
+      description: 'Learning SVG: from core concepts to animation.',
       linkNotion:
         'https://app.notion.com/p/Roadmap-SVG-untuk-React-Developer-3a3da22dd3418081a05de4c08d5f34ca?source=copy_link',
       tags: ['SVG', 'React', 'Frontend', 'Roadmap', 'Graphics'],
@@ -192,8 +187,7 @@ export const achievementData: AchievementData = {
       id: 'roadmap-react-typescript',
       title: 'React TypeScript',
       category: 'roadmap',
-      description:
-        'Comprehensive roadmap and guide for beginners to become job-ready with React and TypeScript.',
+      description: 'Comprehensive roadmap and guide for beginners.',
       linkNotion:
         'https://app.notion.com/p/Roadmap-React-TypeScript-Pemula-Job-Ready-35fda22dd34180c69e6dd7e1761453ff?source=copy_link',
       tags: [
@@ -224,8 +218,7 @@ export const achievementData: AchievementData = {
       id: 'javascript-advanced',
       title: 'Advanced JavaScript',
       category: 'roadmap',
-      description:
-        'Notes and exercises on advanced JavaScript concepts and patterns.',
+      description: 'Notes and exercises on advanced JavaScript.',
       linkNotion:
         'https://app.notion.com/p/WPU-Javascript-lanjutan-322da22dd34180bc843cfda17983e5b3?source=copy_link',
       tags: ['JavaScript', 'Advanced', 'Learning', 'Notes'],

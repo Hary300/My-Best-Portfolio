@@ -137,7 +137,7 @@ const AchievementLearningGrid = () => {
               placeholder='Enter your keyword'
               {...register('keyword')}
               className={cn(
-                'rounded-full border pl-8 py-2 xl:py-3 text-xs md:text-sm focus:outline-0 w-full shadow-subtle'
+                'rounded-full border pl-8 py-2 xl:py-3 text-xs lg:text-sm focus:outline-0 w-full shadow-subtle'
               )}
             />
             <IoSearchSharp className='absolute top-1/2 -translate-y-1/2 left-3 text-gray-400' />
