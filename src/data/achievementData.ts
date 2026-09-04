@@ -4,14 +4,20 @@ import type { HeaderData } from '@/types/header';
 import type { HeroImg } from '@/types/hero';
 import { Award, type LucideIcon } from 'lucide-react';
 import type { IconType } from 'react-icons/lib';
-import { IoDocumentTextOutline } from 'react-icons/io5';
+import {
+  IoBookOutline,
+  IoDocumentTextOutline,
+  IoExtensionPuzzleOutline,
+} from 'react-icons/io5';
 import { RxGear } from 'react-icons/rx';
-import { IoBookOutline } from 'react-icons/io5';
 import ahademy from '@/assets/images/certificates/ahademy.webp';
+
+type Category = 'roadmap' | 'setup' | 'logic' | 'reference';
 
 export interface Learning {
   id: string;
   title: string;
+  category: Category;
   description: string;
   linkNotion: string;
   tags?: string[];
@@ -64,7 +70,8 @@ export const achievementData: AchievementData = {
   learnings: [
     {
       id: 'learning-backend-typescript',
-      title: 'Backend — TypeScript',
+      title: 'Backend TypeScript',
+      category: 'roadmap',
       linkNotion:
         'https://app.notion.com/p/Learning-Backend-TypeScript-Version-37dda22dd34180889049e8d3dba8f8ce?source=copy_link',
       tags: ['Backend', 'TypeScript', 'Node.js'],
@@ -77,6 +84,7 @@ export const achievementData: AchievementData = {
     {
       id: 'learning-react-hook-form',
       title: 'React Hook Form',
+      category: 'roadmap',
       description:
         'Building forms in React, handling form, validation, and integration with Zod.',
       linkNotion:
@@ -87,20 +95,9 @@ export const achievementData: AchievementData = {
       accentColorDark: '#4A463D',
     },
     {
-      id: 'react-with-hary300',
-      title: 'React with Hary300',
-      description:
-        'Notes and exercises following the React with Hary300 learning series.',
-      linkNotion:
-        'https://app.notion.com/p/React-with-Hary300-35cda22dd34180e1ac79f54a763881db?source=copy_link',
-      tags: ['React', 'JavaScript', 'Course', 'Learning', 'Frontend'],
-      icon: IoDocumentTextOutline,
-      accentColor: '#8CA9FF',
-      accentColorDark: '#2B3C68',
-    },
-    {
       id: 'setup-typescript',
       title: 'Typescript Setup',
+      category: 'setup',
       description: 'A step-by-step guide to configuring TypeScript projects.',
       linkNotion:
         'https://app.notion.com/p/Setup-Typescript-37cda22dd3418049bc51c954bdad4ff2',
@@ -110,12 +107,13 @@ export const achievementData: AchievementData = {
       accentColorDark: '#6B4323',
     },
     {
-      id: 'logic-notes',
-      title: 'Logic Notes',
+      id: 'carousel-logic-notes',
+      title: 'Carousel Logic',
+      category: 'logic',
       description:
         'Notes and exercises for programming logic and problem solving.',
       linkNotion:
-        'https://app.notion.com/p/Logic-Notes-3ccda22dd341806693b9fb2783670fe3?source=copy_link',
+        'https://app.notion.com/p/Carousel-Logic-Notes-3ccda22dd341806693b9fb2783670fe3?source=copy_link',
       tags: [
         'Logic',
         'Algorithm',
@@ -123,13 +121,14 @@ export const achievementData: AchievementData = {
         'Learning',
         'Programming',
       ],
-      icon: IoBookOutline,
+      icon: IoExtensionPuzzleOutline,
       accentColor: '#BADFDB',
       accentColorDark: '#233835',
     },
     {
       id: 'setup-css',
       title: 'CSS initial setup',
+      category: 'setup',
       description: 'Initial CSS setup and global styling configuration',
       linkNotion:
         'https://app.notion.com/p/Global-Css-Initial-setup-3c9da22dd341803694fdc3ee5688dc9b?source=copy_link',
@@ -141,6 +140,7 @@ export const achievementData: AchievementData = {
     {
       id: 'api-documentation-swagger',
       title: 'Swagger',
+      category: 'roadmap',
       description: 'Documenting REST APIs using Swagger and OpenAPI',
       linkNotion:
         'https://app.notion.com/p/API-Documentation-with-Swagger-OpenAPI-3b0da22dd341808b8633c99c2308837a?source=copy_link',
@@ -152,6 +152,7 @@ export const achievementData: AchievementData = {
     {
       id: 'skeleton-height',
       title: 'Skeleton Height',
+      category: 'reference',
       description:
         'Converting font sizes (typography) into appropriate skeleton loader heights.',
       linkNotion:
@@ -164,6 +165,7 @@ export const achievementData: AchievementData = {
     {
       id: 'javascript-methods',
       title: 'JavaScript Methods',
+      category: 'reference',
       description:
         'Quick-reference cheat sheet of key JavaScript methods for everyday frontend work.',
       linkNotion:
@@ -175,7 +177,8 @@ export const achievementData: AchievementData = {
     },
     {
       id: 'svg-roadmap-react',
-      title: 'SVG Roadmap',
+      title: 'SVG',
+      category: 'roadmap',
       description:
         'Learning SVG: from core concepts to animation and optimization.',
       linkNotion:
@@ -186,8 +189,9 @@ export const achievementData: AchievementData = {
       accentColorDark: '#5A3B53',
     },
     {
-      id: 'roadmap-react-typescript-pemula-job-ready',
-      title: 'React TypeScript Notes',
+      id: 'roadmap-react-typescript',
+      title: 'React TypeScript',
+      category: 'roadmap',
       description:
         'Comprehensive roadmap and guide for beginners to become job-ready with React and TypeScript.',
       linkNotion:
@@ -205,8 +209,9 @@ export const achievementData: AchievementData = {
       accentColorDark: '#423A2B',
     },
     {
-      id: 'wpu-javascript',
+      id: 'basic-javascript',
       title: 'Basic JavaScript',
+      category: 'roadmap',
       description: 'Notes and exercises about basic Javascript.',
       linkNotion:
         'https://app.notion.com/p/WPU-JavaScript-302da22dd341807ca1cae243198d1cab?source=copy_link',
@@ -218,6 +223,7 @@ export const achievementData: AchievementData = {
     {
       id: 'javascript-advanced',
       title: 'Advanced JavaScript',
+      category: 'roadmap',
       description:
         'Notes and exercises on advanced JavaScript concepts and patterns.',
       linkNotion:
@@ -229,7 +235,8 @@ export const achievementData: AchievementData = {
     },
     {
       id: 'css3-notes',
-      title: 'CSS3 Notes',
+      title: 'CSS3',
+      category: 'roadmap',
       description: 'Notes and exercises following the CSS3 learning series.',
       linkNotion:
         'https://app.notion.com/p/WPU-CSS3-31dda22dd341805ea0b9e08cca003ba8?source=copy_link',
@@ -241,7 +248,8 @@ export const achievementData: AchievementData = {
 
     {
       id: 'css-notes',
-      title: 'CSS Notes',
+      title: 'CSS',
+      category: 'roadmap',
       description: 'Notes and exercises following the CSS learning series.',
       linkNotion:
         'https://app.notion.com/p/WPU-CSS-313da22dd34180cfba0cf9903e6d606c?source=copy_link',
@@ -252,7 +260,8 @@ export const achievementData: AchievementData = {
     },
     {
       id: 'html-notes',
-      title: 'HTML Notes',
+      title: 'HTML',
+      category: 'roadmap',
       description: 'Notes and exercises following the HTML learning series.',
       linkNotion:
         'https://app.notion.com/p/WPU-HTML-312da22dd34180349925f05b11146ee3?source=copy_link',
