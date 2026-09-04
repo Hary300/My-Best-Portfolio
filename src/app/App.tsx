@@ -36,7 +36,7 @@ function App() {
   }, [isDark]);
 
   return (
-    <div className='flex max-w-385 mx-auto'>
+    <div className='flex max-w-500 mx-auto'>
       <SidebarMenu />
       <MobileMenu />
       {activeTab === 'home' && <Home />}
