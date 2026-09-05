@@ -11,7 +11,7 @@ interface ProjectCardProps {
 const ProjectCard = ({ project }: ProjectCardProps) => {
   const service = project.service;
   return (
-    <div className='rounded-2xl flex flex-col gap-6 p-4 border-2 shadow-subtle dark:shadow-green'>
+    <div className='rounded-2xl flex flex-col gap-6 p-4 border-2 shadow-subtle dark:shadow-green justify-between'>
       <div className='relative rounded-2xl overflow-hidden h-50'>
         <img
           src={project.image}

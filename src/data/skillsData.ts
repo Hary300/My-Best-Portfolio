@@ -7,14 +7,10 @@ import {
   FaHtml5,
   FaNodeJs,
   FaReact,
+  FaSmile,
 } from 'react-icons/fa';
 import type { IconType } from 'react-icons/lib';
-import {
-  RiNextjsFill,
-  RiNotionFill,
-  RiTailwindCssFill,
-  RiBearSmileFill,
-} from 'react-icons/ri';
+import { RiNextjsFill, RiNotionFill, RiTailwindCssFill } from 'react-icons/ri';
 import {
   SiExpress,
   SiMongodb,
@@ -35,10 +31,14 @@ import {
 import { IoLogoVercel } from 'react-icons/io5';
 import { VscVscode } from 'react-icons/vsc';
 import { CodeXml, type LucideIcon } from 'lucide-react';
+import type { ComponentType, SVGProps } from 'react';
+import SimpleIcons from '@/components/icons/SimpleIcons';
+import Formpree from '@/components/icons/Formpree';
+import { Zustand } from '@/components/icons/Zustand';
 
 export interface Skill {
   name: string;
-  icon: IconType;
+  icon: IconType | ComponentType<SVGProps<SVGSVGElement>>;
   percentage: number;
   color: string;
   url: string;
@@ -125,9 +125,9 @@ export const skillData: SkillData = {
         },
         {
           name: 'Zustand',
-          icon: RiBearSmileFill,
+          icon: Zustand,
           percentage: 80,
-          color: 'text-amber-800 dark:text-amber-200',
+          color: 'text-[#443e38] dark:text-[#a69f97]',
           url: 'https://zustand-demo.pmnd.rs',
         },
         {
@@ -242,14 +242,14 @@ export const skillData: SkillData = {
         {
           name: 'React Icons',
           icon: SiReact,
-          percentage: 85,
+          percentage: 95,
           color: 'text-red-600 dark:text-red-400',
           url: 'https://react-icons.github.io/react-icons/',
         },
         {
           name: 'Lucide React',
           icon: SiLucide,
-          percentage: 85,
+          percentage: 95,
           color: 'text-orange-600 dark:text-orange-400',
           url: 'https://lucide.dev',
         },
@@ -314,6 +314,27 @@ export const skillData: SkillData = {
           percentage: 75,
           color: 'text-stone-800 dark:text-stone-200',
           url: 'https://www.notion.so',
+        },
+        {
+          name: 'Formspree',
+          icon: Formpree,
+          percentage: 75,
+          color: 'text-red-600 dark:text-red-400',
+          url: 'https://formspree.io/',
+        },
+        {
+          name: 'Simple Icons',
+          icon: SimpleIcons,
+          percentage: 95,
+          color: 'text-neutral-700 dark:text-neutral-300',
+          url: 'https://simpleicons.org/',
+        },
+        {
+          name: 'Icon Buddy',
+          icon: FaSmile,
+          percentage: 95,
+          color: 'text-yellow-500 dark:text-yellow-400',
+          url: 'https://iconbuddy.com/',
         },
       ],
     },
