@@ -36,12 +36,30 @@ import {
   TealCyanPortfolio,
   PurpleMagentaPortfolio,
   NeonPurplePortfolio,
+  VioletBluePortfolio,
 } from '@/assets/images/projects-ss';
 import { Folder } from 'lucide-react';
 
 export const projects: ProjectsData = {
   icon: Folder,
   allProjects: [
+    {
+      id: 'violet-blue-portfolio',
+      title: 'Violet Blue Portfolio',
+      category: {
+        name: 'Landing Page',
+        slug: 'landing-page',
+      },
+      image: VioletBluePortfolio,
+      description:
+        'A sophisticated personal portfolio designed with deep violet and blue gradients, crisp typography, and smooth UI transitions.',
+      techStack: ['react', 'typescript', 'shadcn', 'tailwind'],
+      links: {
+        github:
+          'https://github.com/Hary300/Personal-Project-38-Violet-Blue-Portfolio',
+        liveDemo: 'https://personal-project-38-violet-blue-por.vercel.app/',
+      },
+    },
     {
       id: 'neon-purple-portfolio',
       title: 'Neon Purple Portfolio',

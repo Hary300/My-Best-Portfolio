@@ -34,3 +34,4 @@ export { default as PinkPortfolio } from './PinkPortfolio.webp';
 export { default as TealCyanPortfolio } from './TealCyanPortfolio.webp';
 export { default as PurpleMagentaPortfolio } from './PurpleMagentaPortfolio.webp';
 export { default as NeonPurplePortfolio } from './NeonPurplePortfolio.webp';
+export { default as VioletBluePortfolio } from './VioletBluePortfolio.webp';
