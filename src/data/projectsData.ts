@@ -37,12 +37,30 @@ import {
   PurpleMagentaPortfolio,
   NeonPurplePortfolio,
   VioletBluePortfolio,
+  DarkVioletPortfolio,
 } from '@/assets/images/projects-ss';
 import { Folder } from 'lucide-react';
 
 export const projects: ProjectsData = {
   icon: Folder,
   allProjects: [
+    {
+      id: 'dark-violet-portfolio',
+      title: 'Dark Violet Portfolio',
+      category: {
+        name: 'Landing Page',
+        slug: 'landing-page',
+      },
+      image: DarkVioletPortfolio,
+      description:
+        'A deeply atmospheric dark-mode portfolio elevated by fluid Framer Motion animations and an elegant violet accents layout.',
+      techStack: ['react', 'typescript', 'shadcn', 'framerMotion'],
+      links: {
+        github:
+          'https://github.com/Hary300/Personal-Project-39-Dark-Violet-Portfolio',
+        liveDemo: 'https://personal-project-39-dark-violet-por.vercel.app/',
+      },
+    },
     {
       id: 'violet-blue-portfolio',
       title: 'Violet Blue Portfolio',
