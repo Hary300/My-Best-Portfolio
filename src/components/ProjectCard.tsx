@@ -12,18 +12,20 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   const service = project.service;
   return (
     <div className='rounded-2xl flex flex-col gap-6 p-4 border-2 shadow-subtle dark:shadow-green justify-between'>
-      <div className='relative rounded-2xl overflow-hidden h-50'>
-        <img
-          src={project.image}
-          alt={`${project.title} image`}
-          className='h-full w-full object-cover object-top'
-        />
-        <p className='absolute top-3 left-3 px-3 py-1 text-xs font-semibold tracking-wide rounded-full bg-portfolio-light/90 dark:bg-portfolio-dark/80 backdrop-blur-md text-portfolio-green border border-portfolio-green shadow-sm'>
-          {project.category.name}
-        </p>
+      <div className='flex flex-col gap-6'>
+        <div className='relative rounded-2xl overflow-hidden h-50'>
+          <img
+            src={project.image}
+            alt={`${project.title} image`}
+            className='h-full w-full object-cover object-top'
+          />
+          <p className='absolute top-3 left-3 px-3 py-1 text-xs font-semibold tracking-wide rounded-full bg-portfolio-light/90 dark:bg-portfolio-dark/80 backdrop-blur-md text-portfolio-green border border-portfolio-green shadow-sm'>
+            {project.category.name}
+          </p>
+        </div>
+        <p className='font-semibold text-xl'>{project.title}</p>
+        <p className='text-zinc-500'>{project.description}</p>
       </div>
-      <p className='font-semibold text-xl'>{project.title}</p>
-      <p className='text-zinc-500'>{project.description}</p>
       <div className='flex gap-2 flex-wrap'>
         {project.techStack.map((item) => {
           const stack = techStacks[item];

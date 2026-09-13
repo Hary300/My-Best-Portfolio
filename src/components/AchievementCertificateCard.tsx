@@ -29,7 +29,7 @@ const AchievementCertificateCard = ({
             <HiOutlineBuildingOffice2 /> {data.issuer}
           </p>
         </div>
-        <Button asChild className='bg-portfolio-green'>
+        <Button asChild className='bg-portfolio-green text-neutral-50'>
           <a
             href={data.credentialUrl}
             target='_blank'

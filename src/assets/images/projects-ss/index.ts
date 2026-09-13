@@ -36,3 +36,4 @@ export { default as PurpleMagentaPortfolio } from './PurpleMagentaPortfolio.webp
 export { default as NeonPurplePortfolio } from './NeonPurplePortfolio.webp';
 export { default as VioletBluePortfolio } from './VioletBluePortfolio.webp';
 export { default as DarkVioletPortfolio } from './DarkVioletPortfolio.webp';
+export { default as ManhattanWebsite } from './ManhattanWebsite.webp';

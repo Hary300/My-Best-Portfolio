@@ -38,12 +38,30 @@ import {
   NeonPurplePortfolio,
   VioletBluePortfolio,
   DarkVioletPortfolio,
+  ManhattanWebsite,
 } from '@/assets/images/projects-ss';
 import { Folder } from 'lucide-react';
 
 export const projects: ProjectsData = {
   icon: Folder,
   allProjects: [
+    {
+      id: 'manhattan-website',
+      title: 'Manhattan Website',
+      category: {
+        name: 'Landing Page',
+        slug: 'landing-page',
+      },
+      image: ManhattanWebsite,
+      description:
+        'A sophisticated and modern landing page built with crisp typography, clean layout structures, and seamless component design.',
+      techStack: ['react', 'typescript', 'tailwind', 'shadcn'],
+      links: {
+        github:
+          'https://github.com/Hary300/Discord-Project-01-Manhattan-Website',
+        liveDemo: 'https://discord-project-01-manhattan-websit.vercel.app/',
+      },
+    },
     {
       id: 'dark-violet-portfolio',
       title: 'Dark Violet Portfolio',
