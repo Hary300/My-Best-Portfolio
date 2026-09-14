@@ -333,8 +333,8 @@ export const projects: ProjectsData = {
       },
     },
     {
-      id: 'green-personal-portfolio',
-      title: 'Green Personal Portfolio',
+      id: 'neon-green-portfolio',
+      title: 'Neon Green Portfolio',
       category: {
         name: 'Landing Page',
         slug: 'landing-page',
