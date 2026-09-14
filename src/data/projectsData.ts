@@ -39,12 +39,30 @@ import {
   VioletBluePortfolio,
   DarkVioletPortfolio,
   ManhattanWebsite,
+  NewsHomepageComponent,
 } from '@/assets/images/projects-ss';
 import { Folder } from 'lucide-react';
 
 export const projects: ProjectsData = {
   icon: Folder,
   allProjects: [
+    {
+      id: 'news-homepage',
+      title: 'News Homepage',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
+      image: NewsHomepageComponent,
+      description:
+        'A dynamic and responsive news homepage layout featuring structured content sections, modern typography, and interactive navigation.',
+      techStack: ['html', 'css', 'tailwind', 'javascript'],
+      links: {
+        github:
+          'https://github.com/Hary300/Frontendmentor-Project-15-News-Homepage-Main',
+        liveDemo: 'https://frontendmentor-project-15-news-home.vercel.app/',
+      },
+    },
     {
       id: 'manhattan-website',
       title: 'Manhattan Website',
