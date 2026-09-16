@@ -74,7 +74,7 @@ export const projects: ProjectsData = {
       },
       image: EcommerceProductPage,
       description:
-        'An interactive e-commerce product page featuring a fluid image lightbox gallery, dynamic cart management, and seamless quantity controls.',
+        'An interactive e-commerce product page featuring image lightbox gallery, cart management, and seamless quantity controls.',
       techStack: ['html', 'css', 'tailwind', 'javascript'],
       links: {
         github:
@@ -275,7 +275,7 @@ export const projects: ProjectsData = {
       },
       image: SimpleTodoList,
       description:
-        'A clean and lightweight task manager application for creating, tracking, and managing daily tasks using REST API integrations.',
+        'A clean task manager application for creating, tracking, and managing daily tasks using REST API integrations.',
       techStack: ['html', 'css', 'javascript'],
       service: 'REST API',
       links: {
@@ -510,7 +510,7 @@ export const projects: ProjectsData = {
       },
       image: RatingComponent,
       description:
-        'An interactive rating card component allowing users to select a rating score, submit feedback, and view a dedicated thank-you state.',
+        'An interactive rating card component allowing users to select a rating score and view a dedicated thank-you state.',
       techStack: ['html', 'css', 'tailwind', 'javascript'],
       links: {
         github:
@@ -681,7 +681,7 @@ export const projects: ProjectsData = {
       },
       image: SimpleOmeletteRecipe,
       description:
-        'A clean, responsive recipe page component displaying an omelette recipe built with precise layout styling and modern CSS techniques.',
+        'A clean, responsive recipe page component built with precise layout styling and modern CSS techniques.',
       techStack: ['html', 'css'],
       links: {
         github:

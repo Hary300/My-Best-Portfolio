@@ -25,36 +25,37 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         </div>
         <p className='font-semibold text-xl'>{project.title}</p>
         <p className='text-zinc-500'>{project.description}</p>
-      </div>
-      <div className='flex gap-2 flex-wrap'>
-        {project.techStack.map((item) => {
-          const stack = techStacks[item];
-          const Icon = stack.icon;
-          return (
+        <div className='flex gap-2 flex-wrap'>
+          {project.techStack.map((item) => {
+            const stack = techStacks[item];
+            const Icon = stack.icon;
+            return (
+              <div
+                key={stack.name}
+                className={cn(
+                  'rounded-md p-2 flex items-center gap-1',
+                  stack.bgColor,
+                  stack.textColor
+                )}
+              >
+                {Icon && <Icon />}
+                <span>{stack.name}</span>
+              </div>
+            );
+          })}
+          {service && (
             <div
-              key={stack.name}
               className={cn(
-                'rounded-md p-2 flex items-center gap-1',
-                stack.bgColor,
-                stack.textColor
+                'rounded-md p-2 flex items-center gap-1 bg-indigo-100 dark:bg-indigo-950/60 text-indigo-800 dark:text-indigo-300'
               )}
             >
-              {Icon && <Icon />}
-              <span>{stack.name}</span>
+              <TbApi />
+              <span>{service}</span>
             </div>
-          );
-        })}
-        {service && (
-          <div
-            className={cn(
-              'rounded-md p-2 flex items-center gap-1 bg-indigo-100 dark:bg-indigo-950/60 text-indigo-800 dark:text-indigo-300'
-            )}
-          >
-            <TbApi />
-            <span>{service}</span>
-          </div>
-        )}
+          )}
+        </div>
       </div>
+
       <div className='flex gap-4'>
         <a
           href={project.links.github}
