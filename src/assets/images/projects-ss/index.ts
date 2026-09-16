@@ -38,3 +38,4 @@ export { default as VioletBluePortfolio } from './VioletBluePortfolio.webp';
 export { default as DarkVioletPortfolio } from './DarkVioletPortfolio.webp';
 export { default as ManhattanWebsite } from './ManhattanWebsite.webp';
 export { default as NewsHomepageComponent } from './NewsHomepageComponent.webp';
+export { default as EcommerceProductPage } from './EcommerceProductPage.webp';

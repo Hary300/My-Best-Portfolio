@@ -40,12 +40,30 @@ import {
   DarkVioletPortfolio,
   ManhattanWebsite,
   NewsHomepageComponent,
+  EcommerceProductPage,
 } from '@/assets/images/projects-ss';
 import { Folder } from 'lucide-react';
 
 export const projects: ProjectsData = {
   icon: Folder,
   allProjects: [
+    {
+      id: 'ecommerce-product-page',
+      title: 'Ecommerce Product Page',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
+      image: EcommerceProductPage,
+      description:
+        'An interactive e-commerce product page featuring a fluid image lightbox gallery, dynamic cart management, and seamless quantity controls.',
+      techStack: ['html', 'css', 'tailwind', 'javascript'],
+      links: {
+        github:
+          'https://github.com/Hary300/Frontendmentor-Project-16-Ecommerce-Product-Page-Main',
+        liveDemo: 'https://frontendmentor-project-16-ecommerce.vercel.app/',
+      },
+    },
     {
       id: 'news-homepage',
       title: 'News Homepage',
