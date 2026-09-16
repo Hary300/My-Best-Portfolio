@@ -41,12 +41,30 @@ import {
   ManhattanWebsite,
   NewsHomepageComponent,
   EcommerceProductPage,
+  NftPreviewCardComponent,
 } from '@/assets/images/projects-ss';
 import { Folder } from 'lucide-react';
 
 export const projects: ProjectsData = {
   icon: Folder,
   allProjects: [
+    {
+      id: 'nft-preview-card-component',
+      title: 'Nft Preview Card Component',
+      category: {
+        name: 'UI Component',
+        slug: 'ui-component',
+      },
+      image: NftPreviewCardComponent,
+      description:
+        'A sleek crypto-themed NFT card component featuring smooth hover states, custom overlay effects, and precise layout balance.',
+      techStack: ['html', 'css'],
+      links: {
+        github:
+          'https://github.com/Hary300/Frontendmentor-Project-17-Nft-Preview-Card-Component-Main',
+        liveDemo: 'https://frontendmentor-project-17-nft-previ.vercel.app/',
+      },
+    },
     {
       id: 'ecommerce-product-page',
       title: 'Ecommerce Product Page',
