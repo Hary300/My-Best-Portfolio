@@ -69,6 +69,19 @@ export const achievementData: AchievementData = {
   ],
   learnings: [
     {
+      id: 'css-reset-best-practice',
+      title: 'CSS Reset Best Practice',
+      category: 'setup',
+      description:
+        'A comprehensive guide on modern CSS reset rules and best practices for responsive web design.',
+      linkNotion:
+        'https://app.notion.com/p/CSS-reset-best-practice-3ddda22dd34180b8bdf5ffe90c791d45?source=copy_link',
+      tags: ['CSS', 'Styling', 'Best Practice', 'Frontend', 'Web Design'],
+      icon: RxGear,
+      accentColor: '#FF7E7E',
+      accentColorDark: '#662828',
+    },
+    {
       id: 'learning-backend-typescript',
       title: 'Backend TypeScript',
       category: 'roadmap',
