@@ -42,12 +42,30 @@ import {
   NewsHomepageComponent,
   EcommerceProductPage,
   NftPreviewCardComponent,
+  SeasideWebsite,
 } from '@/assets/images/projects-ss';
 import { Folder } from 'lucide-react';
 
 export const projects: ProjectsData = {
   icon: Folder,
   allProjects: [
+    {
+      id: 'seaside-website',
+      title: 'Seaside Website',
+      category: {
+        name: 'Landing Page',
+        slug: 'landing-page',
+      },
+      image: SeasideWebsite,
+      description:
+        'An immersive coastal-themed landing page seamlessly integrated with the SoundCloud Widget API for background music streaming and dynamic visuals.',
+      techStack: ['react', 'tailwind', 'shadcn'],
+      service: 'soundcloud-widget-api',
+      links: {
+        github: 'https://github.com/Hary300/Discord-Project-02-Seaside_Website',
+        liveDemo: 'https://discord-project-02-seaside-website.vercel.app/',
+      },
+    },
     {
       id: 'nft-preview-card-component',
       title: 'Nft Preview Card Component',
