@@ -60,7 +60,7 @@ export const projects: ProjectsData = {
       description:
         'An immersive coastal-themed landing page seamlessly integrated with the SoundCloud Widget API for background music streaming and dynamic visuals.',
       techStack: ['react', 'tailwind', 'shadcn'],
-      service: 'soundcloud-widget-api',
+      service: 'Soundcloud Widget Api',
       links: {
         github: 'https://github.com/Hary300/Discord-Project-02-Seaside_Website',
         liveDemo: 'https://discord-project-02-seaside-website.vercel.app/',
