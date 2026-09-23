@@ -10,8 +10,9 @@ type TabSlug =
   | 'all'
   | 'web-app'
   | 'landing-page'
-  | 'utility'
   | 'ui-component'
+  | 'utility'
+  | 'backend'
   | 'game';
 
 type CountKey =
@@ -20,6 +21,7 @@ type CountKey =
   | 'landingPage'
   | 'uiComponent'
   | 'utility'
+  | 'backend'
   | 'game';
 
 interface Tabs {
@@ -75,6 +77,12 @@ const Projects = () => {
     },
     {
       id: 6,
+      name: 'Backend',
+      slug: 'backend',
+      countKey: 'backend',
+    },
+    {
+      id: 7,
       name: 'Game',
       slug: 'game',
       countKey: 'game',

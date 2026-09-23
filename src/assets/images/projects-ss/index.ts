@@ -41,3 +41,4 @@ export { default as NewsHomepageComponent } from './NewsHomepageComponent.webp';
 export { default as EcommerceProductPage } from './EcommerceProductPage.webp';
 export { default as NftPreviewCardComponent } from './NftPreviewCardComponent.webp';
 export { default as SeasideWebsite } from './SeaSideWebsite.webp';
+export { default as DarkBluePortfolio } from './DarkBluePortFolio.webp';

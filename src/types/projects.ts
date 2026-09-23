@@ -24,12 +24,14 @@ export type Categories =
   | 'Landing Page'
   | 'Utility'
   | 'UI Component'
+  | 'Backend'
   | 'Game';
 
 export type CategorySlug =
   | 'web-app'
   | 'landing-page'
   | 'utility'
+  | 'backend'
   | 'ui-component'
   | 'game';
 
@@ -56,8 +58,9 @@ export interface Total {
   all: number;
   webApp: number;
   landingPage: number;
-  utility: number;
   uiComponent: number;
+  utility: number;
+  backend: number;
   game: number;
 }
 

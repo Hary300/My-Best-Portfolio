@@ -43,12 +43,30 @@ import {
   EcommerceProductPage,
   NftPreviewCardComponent,
   SeasideWebsite,
+  DarkBluePortfolio,
 } from '@/assets/images/projects-ss';
 import { Folder } from 'lucide-react';
 
 export const projects: ProjectsData = {
   icon: Folder,
   allProjects: [
+    {
+      id: 'dark-blue-portfolio',
+      title: 'Dark Blue Portfolio',
+      category: {
+        name: 'Landing Page',
+        slug: 'landing-page',
+      },
+      image: DarkBluePortfolio,
+      description:
+        'A sophisticated deep-blue portfolio enhanced with smooth Framer Motion entrance animations, clean typography, and a modern layout.',
+      techStack: ['react', 'framerMotion', 'typescript', 'tailwind'],
+      links: {
+        github:
+          'https://github.com/Hary300/Personal-Project-40-Dark-Blue-Portfolio',
+        liveDemo: 'https://personal-project-40-dark-blue-portf.vercel.app/',
+      },
+    },
     {
       id: 'seaside-website',
       title: 'Seaside Website',
@@ -356,8 +374,8 @@ export const projects: ProjectsData = {
       id: 'todo-management-api',
       title: 'Todo Management API',
       category: {
-        name: 'Utility',
-        slug: 'utility',
+        name: 'Backend',
+        slug: 'backend',
       },
       image: TodoListApi,
       description:
@@ -557,8 +575,8 @@ export const projects: ProjectsData = {
       id: 'contact-form-api',
       title: 'Contact Form API',
       category: {
-        name: 'Utility',
-        slug: 'utility',
+        name: 'Backend',
+        slug: 'backend',
       },
       image: ContactFormAPI,
       description:
@@ -795,6 +813,9 @@ export const projects: ProjectsData = {
       ).length,
       utility: this.allProjects.filter(
         (project) => project.category.name === 'Utility'
+      ).length,
+      backend: this.allProjects.filter(
+        (project) => project.category.name === 'Backend'
       ).length,
       game: this.allProjects.filter(
         (project) => project.category.name === 'Game'
