@@ -69,6 +69,19 @@ export const achievementData: AchievementData = {
   ],
   learnings: [
     {
+      id: 'flex-grow-clamp-prompt',
+      title: 'Flex Grow & Clamp Prompt',
+      category: 'reference',
+      description:
+        'Prompt guide for implementing CSS flex-grow and clamp() responsive layouts.',
+      linkNotion:
+        'https://app.notion.com/p/Flex-Grow-Clamp-c8fda22dd3418209a61301d14ad272f8?source=copy_link',
+      tags: ['CSS', 'Flexbox', 'Clamp', 'Responsive', 'Prompt'],
+      icon: IoBookOutline,
+      accentColor: '#F9E8A2',
+      accentColorDark: '#7A6200',
+    },
+    {
       id: 'css-reset-best-practice',
       title: 'CSS Reset Best Practice',
       category: 'setup',
@@ -251,7 +264,6 @@ export const achievementData: AchievementData = {
       accentColor: '#9FA1FF',
       accentColorDark: '#313366',
     },
-
     {
       id: 'css-notes',
       title: 'CSS',
