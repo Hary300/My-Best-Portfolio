@@ -69,6 +69,32 @@ export const achievementData: AchievementData = {
   ],
   learnings: [
     {
+      id: 'php-dasar',
+      title: 'PHP Dasar',
+      category: 'roadmap',
+      description:
+        'Roadmap and fundamentals for learning PHP programming language.',
+      linkNotion:
+        'https://app.notion.com/p/PHP-3e4da22dd341801cab4dfca9ff225cb4?source=copy_link',
+      tags: ['PHP', 'Backend', 'Web Development', 'Roadmap'],
+      icon: IoDocumentTextOutline,
+      accentColor: '#F2C46A',
+      accentColorDark: '#784E00',
+    },
+    {
+      id: 'tips-meningkatkan-seo',
+      title: 'Tips Meningkatkan SEO',
+      category: 'reference',
+      description:
+        'Guide and best practices for optimizing website SEO and search visibility.',
+      linkNotion:
+        'https://app.notion.com/p/Tips-Meningkatkan-SEO-pada-Website-3edda22dd34180cea723db07ed13c11f?source=copy_link',
+      tags: ['SEO', 'Website', 'Marketing', 'Frontend'],
+      icon: IoBookOutline,
+      accentColor: '#66A3BF',
+      accentColorDark: '#1E465A',
+    },
+    {
       id: 'flex-grow-clamp-prompt',
       title: 'Flex Grow & Clamp Prompt',
       category: 'reference',
